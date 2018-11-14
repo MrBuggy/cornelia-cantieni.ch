@@ -5,12 +5,13 @@
 
 span {
     @include fontSize(22px);
-    @include typo-bold();
+    @include typo-italic();
     color: $can-blue-neon;
     display: block;
     padding: $space-base;
 
     @media (min-width: $mq-size-m) {
         color: $can-red;
+        @include fontSize(28px);
     }
 }
