@@ -1,8 +1,19 @@
-@import './assets/basics/css/typo.scss';
+@import "./assets/basics/css/typo.scss";
+
+html,
+body {
+    min-height: 100vh;
+}
 
 body {
-  box-sizing: border-box;
-  font-family: $montserrat-regular, $font-family-fallback;
-  margin: 0;
-  padding: 0;
+    font-family: $montserrat-regular, $font-family-fallback;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: border-box;
 }
