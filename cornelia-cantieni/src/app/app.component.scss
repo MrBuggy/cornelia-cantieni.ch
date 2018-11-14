@@ -1,7 +1,7 @@
-@import "../assets/basics/css/breakpoints.scss";
-@import "../assets/basics/css/colors.scss";
-@import "../assets/basics/css/spacings.scss";
-@import "../assets/basics/css/typo.scss";
+@import '../shared/utils/breakpoints/css/breakpoints.scss';
+@import '../shared/utils/colors/css/colors.scss';
+@import '../shared/utils/spacings/css/spacings.scss';
+@import '../shared/utils/typo/css/typo.scss';
 
 span {
     @include fontSize(22px);
