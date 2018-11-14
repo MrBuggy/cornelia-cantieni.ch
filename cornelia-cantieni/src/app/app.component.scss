@@ -2,16 +2,3 @@
 @import "../shared/utils/colors/css/colors.scss";
 @import "../shared/utils/spacings/css/spacings.scss";
 @import "../shared/utils/typo/css/typo.scss";
-
-span {
-    @include fontSize(22px);
-    @include typo-italic();
-    color: $can-blue-neon;
-    display: block;
-    padding: $space-base;
-
-    @media (min-width: $mq-size-m) {
-        color: $can-red;
-        @include fontSize(28px);
-    }
-}
