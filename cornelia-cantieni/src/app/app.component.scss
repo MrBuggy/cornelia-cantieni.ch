@@ -1,5 +1,12 @@
+@import "../assets/basics/css/breakpoints.scss";
+@import "../assets/basics/css/colors.scss";
 @import "../assets/basics/css/typo.scss";
 
 span {
-  @include fontSize(22px);
+    @include fontSize(22px);
+    color: $can-blue-neon;
+
+    @media (min-width: $mq-size-m) {
+        color: $can-red;
+    }
 }
