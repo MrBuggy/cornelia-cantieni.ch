@@ -5,6 +5,7 @@
 
 span {
     @include fontSize(22px);
+    @include typo-bold();
     color: $can-blue-neon;
     display: block;
     padding: $space-base;
