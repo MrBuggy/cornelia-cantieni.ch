@@ -1,0 +1,5 @@
+@import "../assets/basics/css/typo.scss";
+
+span {
+  @include fontSize(22px);
+}

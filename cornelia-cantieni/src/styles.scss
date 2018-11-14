@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/basics/css/typo.scss';
+
+body {
+  box-sizing: border-box;
+  font-family: $montserrat-regular, $font-family-fallback;
+  margin: 0;
+  padding: 0;
+}
