@@ -1,4 +1,4 @@
-@import '../../webfonts/css/webfonts.scss';
+@import "../../webfonts/css/webfonts.scss";
 
 @function calculateRem($size) {
     $remSize: $size / 16px;
