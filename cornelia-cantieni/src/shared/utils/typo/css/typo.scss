@@ -22,12 +22,16 @@
     font-family: $montserrat-light, $font-family-fallback;
 }
 
+@mixin typo-regular() {
+    font-family: $montserrat-regular, $font-family-fallback;
+}
+
 @mixin typo-semibold() {
     font-family: $montserrat-semibold, $font-family-fallback;
 }
 
-@mixin typo-semibolditalic() {
-    font-family: $montserrat-semibolditalic, $font-family-fallback;
+@mixin typo-semibold-italic() {
+    font-family: $montserrat-semibold-italic, $font-family-fallback;
 }
 
 @mixin typo-thin() {

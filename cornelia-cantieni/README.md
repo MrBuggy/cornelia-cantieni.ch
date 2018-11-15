@@ -1,27 +1,33 @@
-# CorneliaCantieni
+# Website Relaunch 2018/2019 cornelia-cantieni.ch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
 
-## Development server
+This project presents atomic design based components for the website relaunch 2018/2019 of [cornelia-cantieni.ch](http://www.cornelia-cantieni.ch/#/home).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup
+Description of the [setup](src/docs/setup.md) (development server, build, tests etc.).
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The components are based on [atomic design](src/docs/code-scaffolding.md).
 
-## Build
+## Fonts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Description of all [fonts and typographies](src/docs/fonts-typo.md).
 
-## Running unit tests
+## Global styling
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Description of all [global styles](src/docs/global-styles.md).
 
-## Running end-to-end tests
+## Branching strategy
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Description of the [branching strategy](src/docs/branching-strategy.md).
 
-## Further help
+## Code convention
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+General [code convention](src/docs/code-convention.md) for `HTML`, `CSS/SCSS` and `JavaScript/TypeScript`.
+
+## Browser and device matrix
+
+Overall list of [browser and device matrix](src/docs/browser-device-matrix.md).
+
