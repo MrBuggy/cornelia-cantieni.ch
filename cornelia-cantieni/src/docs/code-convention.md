@@ -130,7 +130,7 @@ Always style the `outline` property. **Never use `outline: none;`**:
 
 ### Nesting with SCSS
 
-Don't nest elements in `.scss` file. **Only exception** are `modifier` files, `pseudo-class`, `pseudo-elements` and `@media queries`. [More infos and examples why not nesting in SCSS]:
+Don't nest elements in `.scss` file. **Only exception** are `modifier` files, `pseudo-class`, `pseudo-elements` and `@media queries`. [More infos and examples why not nesting in SCSS](https://www.sitepoint.com/beware-selector-nesting-sass/):
 
 ```html
 <div class="wrapper">
@@ -181,7 +181,7 @@ Don't use `@extend` [More infos and examples](https://webinista.com/updates/dont
 
 ### Filename convention
 
-Lowercase e.g. navigation-list.js
+Lowercase e.g. `navigation-list.js`
 
 ### import
 
