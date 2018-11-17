@@ -1,6 +1,4 @@
-@import "../../shared/utils/breakpoints/css/breakpoints.scss";
 @import "../../shared/utils/colors/css/colors.scss";
-@import "../../shared/utils/spacings/css/spacings.scss";
 @import "../../shared/utils/typo/css/typo.scss";
 
 .library {
@@ -17,8 +15,9 @@
 }
 
 .library__content-item-link {
-    transition: .3s color;
     color: $can-blue;
+    transition: .3s color;
+
     &:hover {
         color: $can-blue-neon;
     }
