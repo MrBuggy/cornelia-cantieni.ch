@@ -11,3 +11,15 @@
 .library__header {
     color: $can-blue;
 }
+
+.content__header {
+    @include fontSize(18px);
+}
+
+.content__item-link {
+    transition: .3s color;
+    color: $can-blue;
+    &:hover {
+        color: $can-blue-neon;
+    }
+}

@@ -3,10 +3,11 @@ import { NgModule } from "@angular/core";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { PageAndComponentLibraryComponent } from './page-and-component-library/page-and-component-library.component';
+import { PageComponentLibraryComponent } from './page-component-library/page-component-library.component';
+import { TestCompComponent } from './test-comp/test-comp.component';
 
 @NgModule({
-    declarations: [AppComponent, PageAndComponentLibraryComponent],
+    declarations: [AppComponent, PageComponentLibraryComponent, TestCompComponent],
     imports: [BrowserModule, AppRoutingModule],
     providers: [],
     bootstrap: [AppComponent]
