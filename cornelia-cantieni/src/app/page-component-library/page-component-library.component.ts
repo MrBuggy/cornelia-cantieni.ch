@@ -1,6 +1,4 @@
 import { Component, ModuleWithComponentFactories } from '@angular/core';
-import { TestCompComponent } from '../test-comp/test-comp.component';
-import { Routes } from '@angular/router';
 import { Route } from './Route';
 
 @Component({
@@ -16,10 +14,7 @@ import { Route } from './Route';
 
 export class PageComponentLibraryComponent {
 
-  pagesList: Array<Route> = [
-    new Route(
-      'TestComponent',
-      'testcomp'
-    )
-  ];
+  componentsList: Array<Route> = [];
+
+  pagesList: Array<Route> = [];
 }

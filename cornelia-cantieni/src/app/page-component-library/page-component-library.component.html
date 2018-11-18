@@ -5,7 +5,7 @@
   <section class="library__content">
     <h2 class="library__content-header">Components</h2>
     <section class="library-content__item">
-      <a class="library__content-item-link" *ngFor="let component of componentsList" [routerLink]="component.path">he</a>
+      <a class="library__content-item-link" *ngFor="let component of componentsList" [routerLink]="component.path">{{component.name}}</a>
     </section>
   </section>
   <section class="library__content">
@@ -15,5 +15,3 @@
     </section>
   </section>
 </article>
-
-<router-outlet></router-outlet>
