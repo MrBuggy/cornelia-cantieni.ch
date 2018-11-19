@@ -1,5 +1,5 @@
 # cornelia-cantieni.ch
-Website Relaunch 2018 [cornelia-cantieni.ch](http://www.cornelia-cantieni.ch/#/home). This website was developed back in 2013/2014 and now a redesign is required.
+Website Relaunch 2018 [cornelia-cantieni.ch](http://www.cornelia-cantieni.ch/#/home). This website was developed back in 2015 with AngularJS. Now a relaunch is required, to stay up to date with Angular and use some new design trends.
 
 ## Install and setup
 
