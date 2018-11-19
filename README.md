@@ -49,22 +49,6 @@ The build artifacts will be stored in the `dist/` directory. Use the `--prod` fl
 ng build --prod
 ```
 
-### Running unit tests
-
-To execute the unit tests via [Karma](https://karma-runner.github.io) run:
-
-```
-ng test
-```
-
-### Running end-to-end tests
-
-To execute the end-to-end tests via [Protractor](http://www.protractortest.org/) run:
-
-```
-ng e2e
-```
-
 ### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
