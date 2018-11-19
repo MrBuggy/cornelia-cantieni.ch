@@ -1,0 +1,19 @@
+@import "../../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../../shared/utils/typo/css/typo.scss";
+
+.can-button--tile {
+    .can-button__input {
+        @include fontSize(14px);
+        border: none;
+        text-align: left;
+
+        @media (min-width: $mq-size-m) {
+            &:hover {
+                @include fontSize(24px);
+                background-color: transparent;
+                color: $can-blue-neon;
+            }
+        }
+    }
+}
