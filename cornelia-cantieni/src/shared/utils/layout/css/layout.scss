@@ -1,1 +1,18 @@
-// TODO
+@import "../../breakpoints/css/breakpoints.scss";
+@import "../../spacings/css/spacings.scss";
+
+.l-page-outer {
+    margin: $space-small-desktop 0;
+
+    @media (min-width: $mq-size-m) {
+        margin: $space-xx-large 0;
+    }
+}
+
+.l-page-inner {
+    padding: $space-small-desktop 0;
+
+    @media (min-width: $mq-size-m) {
+        padding: $space-medium 0;
+    }
+}
