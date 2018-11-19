@@ -1,0 +1,25 @@
+@import "../../shared/utils/colors/css/colors.scss";
+@import "../../shared/utils/spacings/css/spacings.scss";
+@import "../../shared/utils/typo/css/typo.scss";
+
+.library {
+    @include typo-regular();
+    padding: $space-small;
+}
+
+.library__header {
+    color: $can-blue;
+}
+
+.library__content-header {
+    @include fontSize(18px);
+}
+
+.library__content-item-link {
+    color: $can-blue;
+    transition: .3s color;
+
+    &:hover {
+        color: $can-blue-neon;
+    }
+}

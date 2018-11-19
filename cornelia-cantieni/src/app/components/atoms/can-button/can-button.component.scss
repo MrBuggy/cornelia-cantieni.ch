@@ -1,0 +1,33 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+@import "../../../../shared/utils/typo/css/typo.scss";
+
+$transition-properties: 0.3s ease-in-out;
+
+.can-button {
+}
+
+.can-button__input {
+    @include fontSize(18px);
+    background-color: transparent;
+    border: 1px solid $can-blue-sea;
+    color: $can-blue-sea;
+    padding: $space-base;
+    text-align: center;
+    transition: background-color $transition-properties, color $transition-properties;
+    width: 100%;
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(26px);
+        width: auto;
+
+        &:hover {
+            background-color: $can-blue-sea;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+}
+
+@import "./modifier/tile.scss";
