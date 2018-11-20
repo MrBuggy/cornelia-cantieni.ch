@@ -1,0 +1,16 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+
+$icon-size-large: 20px;
+
+.can-icon {}
+
+.can-icon__icon {
+    color: $can-blue-sea;
+    margin-top: 2px;
+
+    @media (min-width: $mq-size-m) {
+        font-size: $icon-size-large;
+        margin-top: 5px;
+    }
+}

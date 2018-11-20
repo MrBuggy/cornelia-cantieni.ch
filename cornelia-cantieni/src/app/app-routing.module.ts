@@ -10,21 +10,23 @@ import { ButtonViewComponent } from "./views/components/button-view/button-view.
 // pages
 import { PageHomeComponent } from "./views/pages/page-home/page-home.component";
 
-
 const routes: Routes = [
     {
-        path: '',
-        redirectTo: '/library',
-        pathMatch: 'full'
-    }, {
-        path: 'library',
-        component: PageComponentLibraryComponent,
-    }, {
-        path: 'library/button-view',
-        component: ButtonViewComponent,
-    }, {
-        path: 'library/page-home',
-        component: PageHomeComponent,
+        path: "",
+        redirectTo: "/library",
+        pathMatch: "full"
+    },
+    {
+        path: "library",
+        component: PageComponentLibraryComponent
+    },
+    {
+        path: "library/button-view",
+        component: ButtonViewComponent
+    },
+    {
+        path: "library/page-home",
+        component: PageHomeComponent
     }
 ];
 
@@ -32,5 +34,4 @@ const routes: Routes = [
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
-
 export class AppRoutingModule {}

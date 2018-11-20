@@ -13,7 +13,7 @@ $transition-properties: 0.3s ease-in-out;
     background-color: transparent;
     border: 1px solid $can-blue-sea;
     color: $can-blue-sea;
-    padding: $space-base;
+    padding: $space-base $space-medium;
     text-align: center;
     transition: background-color $transition-properties, color $transition-properties;
     width: 100%;

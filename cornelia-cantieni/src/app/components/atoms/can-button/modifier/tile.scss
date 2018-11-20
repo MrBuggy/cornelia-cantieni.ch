@@ -2,11 +2,17 @@
 @import "../../../../../shared/utils/colors/css/colors.scss";
 @import "../../../../../shared/utils/typo/css/typo.scss";
 
+$icon-size: 20px;
+
 .can-button--tile {
+    align-items: center;
+    display: flex;
+
     .can-button__input {
-        @include fontSize(14px);
         border: none;
+        padding-left: 0;
         text-align: left;
+        width: auto;
 
         @media (min-width: $mq-size-m) {
             @include fontSize(24px);

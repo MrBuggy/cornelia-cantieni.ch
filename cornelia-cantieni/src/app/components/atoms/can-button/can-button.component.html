@@ -1,3 +1,4 @@
 <div class="can-button{{ modifier !== undefined ? ' can-button--' + modifier : ''}}">
     <button class="can-button__input">{{ text }}</button>
+    <can-icon *ngIf="modifier === 'tile'" iconName="angle-right"></can-icon>
 </div>

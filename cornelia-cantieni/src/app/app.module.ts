@@ -7,9 +7,10 @@ import { PageComponentLibraryComponent } from './page-component-library/page-com
 import { ButtonViewComponent } from './views/components/button-view/button-view.component';
 import { CanButtonComponent } from './components/atoms/can-button/can-button.component';
 import { PageHomeComponent } from './views/pages/page-home/page-home.component';
+import { CanIconComponent } from './components/atoms/can-icon/can-icon.component';
 
 @NgModule({
-    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent],
+    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanIconComponent],
     imports: [BrowserModule, AppRoutingModule],
     providers: [],
     bootstrap: [AppComponent]
