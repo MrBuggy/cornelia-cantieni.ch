@@ -28,7 +28,6 @@
             @include fontSize(24px);
 
             &:hover {
-                background-color: transparent;
                 color: $can-blue-neon;
             }
         }
