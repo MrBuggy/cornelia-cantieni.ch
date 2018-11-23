@@ -1,18 +1,21 @@
 @import "../../../../../shared/utils/breakpoints/css/breakpoints.scss";
 @import "../../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../../shared/utils/icons/css/icons.scss";
 @import "../../../../../shared/utils/typo/css/typo.scss";
 
 $icon-size: 20px;
 
 .can-button--tile {
-    align-items: center;
-    display: flex;
-
     .can-button__input {
         border: none;
         padding-left: 0;
         text-align: left;
         width: auto;
+
+        &::after {
+            @include fasIcon(angle-right1, 14px, 18px);
+            padding-left: 25px;
+        }
 
         @media (min-width: $mq-size-m) {
             @include fontSize(24px);
