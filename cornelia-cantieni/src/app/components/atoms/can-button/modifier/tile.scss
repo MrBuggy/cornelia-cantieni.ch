@@ -1,6 +1,7 @@
 @import "../../../../../shared/utils/breakpoints/css/breakpoints.scss";
 @import "../../../../../shared/utils/colors/css/colors.scss";
 @import "../../../../../shared/utils/icons/css/icons.scss";
+@import "../../../../../shared/utils/spacings/css/spacings.scss";
 @import "../../../../../shared/utils/typo/css/typo.scss";
 
 $icon-size: 20px;
@@ -14,7 +15,7 @@ $icon-size: 20px;
 
         &::after {
             @include fasIcon(angle-right, 14px, 18px);
-            padding-left: 25px;
+            padding-left: $space-medium;
         }
 
         @media (min-width: $mq-size-m) {

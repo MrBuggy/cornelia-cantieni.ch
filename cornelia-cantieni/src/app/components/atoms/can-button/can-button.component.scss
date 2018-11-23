@@ -20,6 +20,7 @@ $transition-properties: 0.3s ease-in-out;
 
     @media (min-width: $mq-size-m) {
         @include fontSize(26px);
+        padding: $space-base $space-medium-desktop;
         width: auto;
 
         &:hover {
