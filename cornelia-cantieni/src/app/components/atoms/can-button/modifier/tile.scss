@@ -14,7 +14,7 @@ $icon-size: 20px;
         width: auto;
 
         &::after {
-            @include fasIcon(angle-right, 14px, 18px);
+            @include fasIcon(angle-right);
             padding-left: $space-medium;
         }
 
