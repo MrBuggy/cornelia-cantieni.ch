@@ -15,7 +15,15 @@ $icon-size: 20px;
 
         &::after {
             @include fasIcon(angle-right);
+            background-color: transparent;
+            display: inline;
             padding-left: $space-medium;
+            position: inherit;
+            transition: none;
+        }
+
+        &::before {
+            display: none;
         }
 
         @media (min-width: $mq-size-m) {
