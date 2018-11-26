@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class CanButtonComponent implements OnInit {
     @Input() modifier: string;
+    @Input() state: string;
     @Input() text: string = "Default button";
 
     className: string = "can-button";

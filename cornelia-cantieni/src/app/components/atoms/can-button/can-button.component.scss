@@ -1,5 +1,6 @@
 @import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
 @import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/outline/css/outline.scss";
 @import "../../../../shared/utils/spacings/css/spacings.scss";
 @import "../../../../shared/utils/typo/css/typo.scss";
 
@@ -38,6 +39,11 @@ $transition-properties: 0.3s ease-in-out;
             z-index: -1;
         }
 
+        &:active,
+        &:focus {
+            @include outline();
+        }
+
         &:hover::before {
             width: 100%;
         }
@@ -47,6 +53,12 @@ $transition-properties: 0.3s ease-in-out;
             cursor: pointer;
         }
     }
+}
+
+.state-can-button--disabled {
+    color: $white;
+    opacity: 0.2;
+    pointer-events: none;
 }
 
 @import "./modifier/tile.scss";
