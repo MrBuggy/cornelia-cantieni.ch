@@ -12,11 +12,11 @@ $transition-properties: 0.3s ease-in-out;
 .can-button__input {
     @include fontSize(18px);
     background-color: transparent;
-    border: 1px solid $can-blue-sea;
+    border: 2px solid $can-blue-sea;
     color: $can-blue-sea;
     padding: $space-base $space-medium;
     text-align: center;
-    transition: background-color $transition-properties, color $transition-properties;
+    transition: color $transition-properties;
     width: 100%;
 
     @media (min-width: $mq-size-m) {
@@ -25,7 +25,6 @@ $transition-properties: 0.3s ease-in-out;
         position: relative;
         width: auto;
 
-        &::after,
         &::before {
             background-color: $can-blue-sea;
             bottom: 0;
