@@ -14,7 +14,8 @@ import { ButtonViewComponent } from "../views/components/button-view/button-view
  */
 export class PageComponentLibraryComponent {
     componentsList: Array<Route> = [
-        new Route("Button", "button-view")
+        new Route("Button", "button-view"),
+        new Route("Input", "input-view")
     ];
 
     pagesList: Array<Route> = [

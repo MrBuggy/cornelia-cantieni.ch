@@ -10,7 +10,7 @@ $transition-properties: 0.3s ease-in-out;
     display: flex;
 }
 
-.can-button__input {
+.can-button__btn {
     @include fontSize(18px);
     background-color: transparent;
     border: 2px solid $can-blue-sea;
