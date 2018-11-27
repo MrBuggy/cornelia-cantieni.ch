@@ -10,8 +10,6 @@ export class CanButtonComponent implements OnInit {
     @Input() state: string;
     @Input() text: string = "Default button";
 
-    className: string = "can-button";
-
     constructor() {}
 
     ngOnInit() {}

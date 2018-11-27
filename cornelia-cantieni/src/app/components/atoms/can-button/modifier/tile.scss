@@ -25,7 +25,7 @@
         }
 
         @media (min-width: $mq-size-m) {
-            @include fontSize(24px);
+            @include fontSize(22px);
 
             &:hover {
                 color: $can-blue-neon;

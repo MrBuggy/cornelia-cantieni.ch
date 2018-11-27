@@ -21,7 +21,7 @@ $transition-properties: 0.3s ease-in-out;
     width: 100%;
 
     @media (min-width: $mq-size-m) {
-        @include fontSize(26px);
+        @include fontSize(22px);
         padding: $space-base $space-medium-desktop;
         position: relative;
         width: auto;
