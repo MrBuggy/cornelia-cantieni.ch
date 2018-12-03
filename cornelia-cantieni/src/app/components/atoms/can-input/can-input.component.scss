@@ -37,6 +37,7 @@
 
     &:focus {
         @include outline-transparent();
+        border-bottom-color: $can-blue-sea;
     }
 }
 
@@ -49,10 +50,6 @@
         .can-input__label {
             transform: translateY(-15px);
             cursor: default;
-        }
-
-        .can-input__input {
-            border-bottom-color: $can-blue-sea;
         }
     }
 }
