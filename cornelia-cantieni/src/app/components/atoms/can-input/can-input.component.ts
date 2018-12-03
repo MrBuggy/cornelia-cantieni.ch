@@ -10,7 +10,7 @@ export class CanInputComponent implements OnInit {
     @Input() id: string;
     @Input() label: string = "Label";
     @Input() hint: string;
-    @Input() value: string;
+    @Input() inputValue: string;
 
     isFocused: boolean = false;
 
