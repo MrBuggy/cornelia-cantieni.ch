@@ -1,0 +1,7 @@
+@import "../../../../../shared/utils/links/css/links.scss";
+
+.can-link--neon {
+    .can-link__link {
+        @include link-neon();
+    }
+}

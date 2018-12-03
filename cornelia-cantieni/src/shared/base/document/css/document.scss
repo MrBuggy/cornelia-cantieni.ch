@@ -1,5 +1,6 @@
-@import "../../../utils/webfonts/css/webfonts.scss";
 @import "../../../utils/layout/css/layout.scss";
+@import "../../../utils/links/css/links.scss";
+@import "../../../utils/webfonts/css/webfonts.scss";
 
 html,
 body {
@@ -17,4 +18,8 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+a {
+    @include link-base();
 }
