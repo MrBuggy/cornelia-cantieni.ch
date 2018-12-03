@@ -31,13 +31,17 @@
     color: $can-blue-sea;
     transition: border-color 180ms linear;
 
+    &:disabled {
+        background: transparent;
+    }
+
     &:focus {
         @include outline();
     }
 }
 
 .can-input__hint {
-
+    @include fontSize(14px);
 }
 
 .state-can-input--active {
@@ -49,6 +53,42 @@
 
         .can-input__input {
             border-bottom-color: $can-blue-sea;
+        }
+    }
+}
+
+.state-can-input--disabled {
+    color: $white;
+    opacity: 0.2;
+    pointer-events: none;
+    user-select: none;
+}
+
+.state-can-input--error {
+    .can-input__wrapper .can-input__label,
+    .can-input__wrapper .can-input__input,
+    .can-input__hint {
+        color: $can-red;
+    }
+
+    .can-input__wrapper {
+        .can-input__input {
+            border-bottom-color: $can-red;
+            color: $can-red;
+        }
+    }
+}
+
+.state-can-input--warning {
+    .can-input__wrapper .can-input__label,
+    .can-input__wrapper .can-input__input,
+    .can-input__hint {
+        color: $can-yellow;
+    }
+
+    .can-input__wrapper {
+        .can-input__input {
+            border-bottom-color: $can-yellow;
         }
     }
 }
