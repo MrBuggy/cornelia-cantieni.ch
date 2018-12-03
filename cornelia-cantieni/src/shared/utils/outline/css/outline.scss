@@ -11,3 +11,7 @@
         border: 0;
     }
 }
+
+@mixin outline-transparent() {
+    outline: transparent;
+}
