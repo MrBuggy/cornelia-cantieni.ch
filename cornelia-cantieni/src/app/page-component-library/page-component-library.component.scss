@@ -10,13 +10,18 @@
 .library__header {
     color: $can-blue;
 }
-
 .library__content-header {
     @include fontSize(18px);
 }
 
+.library-content__item {
+    display: flex;
+    flex-direction: column;
+}
+
 .library__content-item-link {
     color: $can-blue;
+    margin-bottom: $space-small;
     transition: .3s color;
 
     &:hover {

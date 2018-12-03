@@ -1,0 +1,91 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/outline/css/outline.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+@import "../../../../shared/utils/typo/css/typo.scss";
+
+.can-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.can-input__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.can-input__label {
+    @include fontSize(14px);
+    bottom: 8px;
+    color: $can-blue-sea;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.can-input__input {
+    @include fontSize(14px);
+    @include typo-semibold();
+    border: none;
+    border-bottom: 2px solid $can-grey-dark;
+    color: $can-blue-sea;
+    transition: border-color 180ms linear;
+
+    &:disabled {
+        background: transparent;
+    }
+
+    &:focus {
+        @include outline-transparent();
+        border-bottom-color: $can-blue-sea;
+    }
+}
+
+.can-input__hint {
+    @include fontSize(14px);
+}
+
+.state-can-input--active {
+    .can-input__wrapper {
+        .can-input__label {
+            transform: translateY(-15px);
+            cursor: default;
+        }
+    }
+}
+
+.state-can-input--disabled {
+    color: $white;
+    opacity: 0.2;
+    pointer-events: none;
+    user-select: none;
+}
+
+.state-can-input--error {
+    .can-input__wrapper .can-input__label,
+    .can-input__wrapper .can-input__input,
+    .can-input__hint {
+        color: $can-red;
+    }
+
+    .can-input__wrapper {
+        .can-input__input {
+            border-bottom-color: $can-red;
+            color: $can-red;
+        }
+    }
+}
+
+.state-can-input--warning {
+    .can-input__wrapper .can-input__label,
+    .can-input__wrapper .can-input__input,
+    .can-input__hint {
+        color: $can-yellow;
+    }
+
+    .can-input__wrapper {
+        .can-input__input {
+            border-bottom-color: $can-yellow;
+        }
+    }
+}

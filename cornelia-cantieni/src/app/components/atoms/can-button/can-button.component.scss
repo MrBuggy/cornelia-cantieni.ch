@@ -1,33 +1,65 @@
 @import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
 @import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/outline/css/outline.scss";
 @import "../../../../shared/utils/spacings/css/spacings.scss";
 @import "../../../../shared/utils/typo/css/typo.scss";
 
 $transition-properties: 0.3s ease-in-out;
 
 .can-button {
+    display: flex;
 }
 
-.can-button__input {
+.can-button__btn {
     @include fontSize(18px);
     background-color: transparent;
-    border: 1px solid $can-blue-sea;
+    border: 2px solid $can-blue-sea;
     color: $can-blue-sea;
-    padding: $space-base;
+    padding: $space-base $space-medium;
     text-align: center;
-    transition: background-color $transition-properties, color $transition-properties;
+    transition: color $transition-properties;
     width: 100%;
 
     @media (min-width: $mq-size-m) {
-        @include fontSize(26px);
+        @include fontSize(22px);
+        padding: $space-base $space-medium-desktop;
+        position: relative;
         width: auto;
 
-        &:hover {
+        &::before {
             background-color: $can-blue-sea;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            transition: width $transition-properties;
+            width: 0;
+            z-index: -1;
+        }
+
+        &:active,
+        &:focus {
+            @include outline();
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+
+        &:hover {
             color: $white;
             cursor: pointer;
         }
     }
+}
+
+.state-can-button--disabled {
+    color: $white;
+    opacity: 0.2;
+    pointer-events: none;
+    user-select: none;
 }
 
 @import "./modifier/tile.scss";

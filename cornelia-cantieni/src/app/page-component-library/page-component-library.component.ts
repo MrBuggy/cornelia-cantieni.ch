@@ -1,6 +1,5 @@
 import { Component, ModuleWithComponentFactories } from "@angular/core";
 import { Route } from "./Route";
-import { ButtonViewComponent } from "../views/components/button-view/button-view.component";
 
 @Component({
     selector: "page-component-library",
@@ -14,7 +13,9 @@ import { ButtonViewComponent } from "../views/components/button-view/button-view
  */
 export class PageComponentLibraryComponent {
     componentsList: Array<Route> = [
-        new Route("Button", "button-view")
+        new Route("Button", "button-view"),
+        new Route("Input", "input-view"),
+        new Route("Link", "link-view")
     ];
 
     pagesList: Array<Route> = [

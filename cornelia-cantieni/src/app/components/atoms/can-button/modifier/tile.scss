@@ -1,18 +1,33 @@
 @import "../../../../../shared/utils/breakpoints/css/breakpoints.scss";
 @import "../../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../../shared/utils/icons/css/icons.scss";
+@import "../../../../../shared/utils/spacings/css/spacings.scss";
 @import "../../../../../shared/utils/typo/css/typo.scss";
 
 .can-button--tile {
-    .can-button__input {
-        @include fontSize(14px);
+    .can-button__btn {
         border: none;
+        padding-left: 0;
         text-align: left;
+        width: auto;
+
+        &::after {
+            @include fasIcon(angle-right);
+            background-color: transparent;
+            display: inline;
+            padding-left: $space-medium;
+            position: inherit;
+            transition: none;
+        }
+
+        &::before {
+            display: none;
+        }
 
         @media (min-width: $mq-size-m) {
-            @include fontSize(24px);
+            @include fontSize(22px);
 
             &:hover {
-                background-color: transparent;
                 color: $can-blue-neon;
             }
         }

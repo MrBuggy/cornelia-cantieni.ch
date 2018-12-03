@@ -1,0 +1,7 @@
+<div class="can-input{{ state !== undefined ? ' state-can-input--' + state : ''}}" [ngClass]="{'state-can-input--active': isFocused || inputValue }">
+    <div class="can-input__wrapper">
+        <label [attr.for]="id" class="can-input__label">{{label}}</label>
+        <input [attr.id]="id" type="text" class="can-input__input" (blur)="isFocused = false" (focus)="isFocused = true" [(ngModel)]="inputValue" [attr.disabled] = "state === 'disabled' ? 'disabled' : null">
+    </div>
+    <span class="can-input__hint">{{hint}}</span>
+</div>

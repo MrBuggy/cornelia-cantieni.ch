@@ -1,1 +1,38 @@
-// TODO
+@import "../../colors/css/colors.scss";
+
+$transition-properties: 0.3s ease-in-out;
+
+@mixin link-base() {
+    border-bottom: 1px solid $can-blue-neon;
+    color: $can-blue-neon;
+    text-decoration: none;
+    transition: border-bottom-color $transition-properties, color $transition-properties;
+
+    &:active,
+    &:focus,
+    &:hover {
+        border-bottom-color: $can-blue;
+        color: $can-blue;
+        cursor: pointer;
+    }
+}
+
+@mixin link-neon() {
+    border-bottom: 1px solid $can-blue-neon-light;
+    color: $can-blue-neon-light;
+
+    &:active,
+    &:focus,
+    &:hover {
+        border-bottom-color: $can-blue-light;
+        color: $can-blue-light;
+    }
+}
+
+@mixin link-reset() {
+	&:focus,
+	&:hover,
+	&:active {
+		background-color: transparent;
+	}
+}

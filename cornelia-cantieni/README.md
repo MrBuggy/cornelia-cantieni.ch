@@ -31,3 +31,7 @@ General [code convention](src/docs/code-convention.md) for `HTML`, `CSS/SCSS` an
 
 Overall list of [browser and device matrix](src/docs/browser-device-matrix.md).
 
+## Font Awesome Icons
+
+List of all [Font Awesome Icons](src/docs/font-awesome-icons.md) and how to use them.
+

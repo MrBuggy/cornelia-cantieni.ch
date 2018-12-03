@@ -1,0 +1,40 @@
+@import "../../breakpoints/css/breakpoints.scss";
+
+$icon-font-family: "Font Awesome 5 Free";
+$icon-font-weight: 900;
+
+@function getIcon($icon-name) {
+    @if $icon-name == arrow-circle-up {
+        $icon-name: "\f0aa";
+    } @else if $icon-name == angle-right {
+        $icon-name: "\f105";
+    } @else if $icon-name == bars {
+        $icon-name: "\f0c9";
+    } @else if $icon-name == copyright {
+        $icon-name: "\f1f9";
+    }  @else if $icon-name == map-marker-alt {
+        $icon-name: "\f3c5";
+    } @else if $icon-name == plus {
+        $icon-name: "\f067";
+    } @else if $icon-name == times {
+        $icon-name: "\f00d";
+    } @else if $icon-name == times-circle {
+        $icon-name: "\f057";
+    } @else {
+        @error "$icon-name: `#{$icon-name}` is an unknown icon name. You can find all valid icon names in `font-awesome-icons.md` readme file.";
+    }
+
+    @return $icon-name;
+}
+
+@mixin fasIcon($icon-name, $icon-font-size: 15px, $icon-font-size-desktop: 20px) {
+    content: getIcon($icon-name);
+    font-family: $icon-font-family;
+    font-size: $icon-font-size;
+    font-weight: $icon-font-weight;
+    vertical-align: middle;
+
+    @media (min-width: $mq-size-m) {
+        font-size: $icon-font-size-desktop
+    }
+}

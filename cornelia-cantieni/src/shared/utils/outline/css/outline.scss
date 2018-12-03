@@ -1,1 +1,17 @@
-// TODO
+@import "../../colors/css/colors.scss";
+
+@mixin outline() {
+    outline: 1px dotted Highlight; // firefox fallback;
+    outline: 1px dotted -webkit-focus-ring-color;
+    outline-color: $black;
+    outline-offset: 5px;
+
+    // remove dotted outline for text in button https://css-tricks.com/removing-the-dotted-outline/
+    &::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+@mixin outline-transparent() {
+    outline: transparent;
+}
