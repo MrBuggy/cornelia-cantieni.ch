@@ -1,0 +1,6 @@
+@import "../../../../shared/utils/gradients/css/gradients.scss";
+
+.ex-gradient-background {
+    @include gradient-base();
+    padding: 20px;
+}

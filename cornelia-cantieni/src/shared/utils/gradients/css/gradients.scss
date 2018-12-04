@@ -1,1 +1,5 @@
-// TODO
+@import "../../colors/css/colors.scss";
+
+@mixin gradient-base() {
+    background: linear-gradient(to right, $can-blue-gradient-dark, $can-blue-gradient-medium, $can-blue-gradient-light);
+}
