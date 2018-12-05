@@ -12,9 +12,11 @@ import { CanInputComponent } from './components/molecules/can-input/can-input.co
 import { InputViewComponent } from './views/components/input-view/input-view.component';
 import { CanLinkComponent } from './components/atoms/can-link/can-link.component';
 import { LinkViewComponent } from './views/components/link-view/link-view.component';
+import { CanHeaderComponent } from './components/organisms/can-header/can-header.component';
+import { HeaderViewComponent } from './views/components/header-view/header-view.component';
 
 @NgModule({
-    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent],
+    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent],
     imports: [BrowserModule, AppRoutingModule, FormsModule],
     providers: [],
     bootstrap: [AppComponent]

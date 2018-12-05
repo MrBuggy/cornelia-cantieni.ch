@@ -1,0 +1,25 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/gradients/css/gradients.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+
+$logo-height: 45px;
+$logo-height-large: 90px;
+$logo-width: 150px;
+$logo-width-large: 300px;
+
+.can-header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.can-header__top {
+    display: flex;
+    flex-direction: row;
+}
+
+.can-header__logo {
+    height: $logo-height;
+    width: $logo-width;
+}

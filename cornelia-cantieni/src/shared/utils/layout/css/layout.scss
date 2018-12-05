@@ -1,4 +1,5 @@
 @import "../../breakpoints/css/breakpoints.scss";
+@import "../../gradients/css/gradients.scss";
 @import "../../spacings/css/spacings.scss";
 
 .l-page-outer {
@@ -6,6 +7,21 @@
 
     @media (min-width: $mq-size-m) {
         margin: $space-xx-large 0;
+    }
+}
+
+.l-page-outer--gradient {
+    margin-top: 0;
+    position: relative;
+
+    &::after {
+        @include gradient-base();
+        bottom: 0;
+        content: "";
+        height: 5px;
+        left: 0;
+        position: absolute;
+        width: 100vw;
     }
 }
 

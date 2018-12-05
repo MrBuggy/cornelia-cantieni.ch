@@ -1,5 +1,7 @@
 @import "../../colors/css/colors.scss";
 
+$gradient: linear-gradient(to right, $can-blue-gradient-dark, $can-blue-gradient-medium, $can-blue-gradient-light);
+
 @mixin gradient-base() {
-    background: linear-gradient(to right, $can-blue-gradient-dark, $can-blue-gradient-medium, $can-blue-gradient-light);
+    background: $gradient;
 }
