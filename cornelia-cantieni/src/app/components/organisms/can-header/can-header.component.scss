@@ -11,15 +11,27 @@ $logo-width-large: 300px;
 .can-header {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    padding: $space-super-small 0;
+    width: 100%;
+
+    @media (min-width: $mq-size-m) {
+        padding: $space-medium 0;
+    }
 }
 
 .can-header__top {
+    align-items: center;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .can-header__logo {
     height: $logo-height;
     width: $logo-width;
+
+    @media (min-width: $mq-size-m) {
+        height: $logo-height-large;
+        width: $logo-width-large;
+    }
 }

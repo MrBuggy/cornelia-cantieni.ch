@@ -1,0 +1,21 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+
+.can-hamburger {
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-between;
+    width: 35px;
+
+    @media (min-width: $mq-size-m) {
+        display: none;
+    }
+}
+
+.can-hamburger__bar {
+    background-color: $can-blue-gradient-light;
+    border-radius: 5px;
+    height: 5px;
+    width: 100%;
+}
