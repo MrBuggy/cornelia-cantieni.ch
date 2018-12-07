@@ -7,6 +7,7 @@ $logo-height: 45px;
 $logo-height-large: 90px;
 $logo-width: 150px;
 $logo-width-large: 300px;
+$padding-bottom-header-top: 40px;
 
 .can-header {
     display: flex;
@@ -15,7 +16,7 @@ $logo-width-large: 300px;
     width: 100%;
 
     @media (min-width: $mq-size-m) {
-        padding: $space-medium 0;
+        padding: $space-medium 0 0;
     }
 }
 
@@ -24,6 +25,10 @@ $logo-width-large: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (min-width: $mq-size-m) {
+        padding-bottom: $padding-bottom-header-top;
+    }
 }
 
 .can-header__logo {

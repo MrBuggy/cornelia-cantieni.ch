@@ -1,6 +1,30 @@
 @import "../../breakpoints/css/breakpoints.scss";
+@import "../../colors/css/colors.scss";
 @import "../../gradients/css/gradients.scss";
 @import "../../spacings/css/spacings.scss";
+
+$height-header-mobile: 85px;
+
+.l-off-canvas {
+    background-color: $white;
+    height: calc(100% - #{$height-header-mobile});
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: $height-header-mobile;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+    z-index: -1;
+
+    @media (min-width: $mq-size-m) {
+        display: none;
+    }
+}
+
+.l-off-canvas--open {
+    opacity: 1;
+    z-index: 10;
+}
 
 .l-page-outer {
     margin: $space-small-desktop 0;
@@ -10,7 +34,7 @@
     }
 }
 
-.l-page-outer--gradient {
+.l-page-outer--header {
     margin-top: 0;
     position: relative;
 
@@ -22,6 +46,18 @@
         left: 0;
         position: absolute;
         width: 100vw;
+    }
+
+    @media (min-width: $mq-size-m) {
+        &::before {
+            background-color: $can-grey;
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            top: 175px;
+            width: 100vw;
+        }
     }
 }
 

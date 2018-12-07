@@ -1,0 +1,40 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+@import "../../../../shared/utils/typo/css/typo.scss";
+
+$padding-left-list: 14px;
+
+.can-nav-list {
+    display: none;
+
+    @media (min-width: $mq-size-m) {
+        display: block;
+    }
+}
+
+.can-nav-list__list {
+    display: flex;
+    flex-direction: row;
+    padding: $space-medium 0 0 $padding-left-list;
+}
+
+.can-nav-list__list-item {
+    @include fontSize(18px);
+    color: $can-grey-dark;
+    padding-right: $space-xx-large;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: $can-blue-sea;
+        cursor: pointer;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.state-can-nav-list__list-item--active {
+    color: $can-blue-sea;
+}

@@ -1,10 +1,11 @@
 @import "../../../utils/layout/css/layout.scss";
 @import "../../../utils/links/css/links.scss";
+@import "../../../utils/lists/css/lists.scss";
 @import "../../../utils/webfonts/css/webfonts.scss";
 
 html,
 body {
-    min-height: 100vh;
+    // min-height: 100vh;
 }
 
 body {
@@ -22,4 +23,8 @@ body {
 
 a {
     @include link-base();
+}
+
+ul {
+    @include list-reset();
 }

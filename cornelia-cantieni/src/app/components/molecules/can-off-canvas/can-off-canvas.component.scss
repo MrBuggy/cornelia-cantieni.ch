@@ -1,0 +1,20 @@
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+
+.can-off-canvas {
+    display: flex;
+    justify-content: center;
+}
+
+.can-off-canvas__list {
+    text-align: center;
+}
+
+.can-off-canvas__list-item {
+    color: $can-grey-dark;
+    padding: $space-small-desktop 0;
+}
+
+.state-can-off-canvas__list-item--active {
+    color: $can-blue-sea;
+}

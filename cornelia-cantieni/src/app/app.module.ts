@@ -15,9 +15,11 @@ import { LinkViewComponent } from './views/components/link-view/link-view.compon
 import { CanHeaderComponent } from './components/organisms/can-header/can-header.component';
 import { HeaderViewComponent } from './views/components/header-view/header-view.component';
 import { CanHamburgerComponent } from './components/molecules/can-hamburger/can-hamburger.component';
+import { CanNavListComponent } from './components/molecules/can-nav-list/can-nav-list.component';
+import { CanOffCanvasComponent } from './components/molecules/can-off-canvas/can-off-canvas.component';
 
 @NgModule({
-    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent, CanHamburgerComponent],
+    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent, CanHamburgerComponent, CanNavListComponent, CanOffCanvasComponent],
     imports: [BrowserModule, AppRoutingModule, FormsModule],
     providers: [],
     bootstrap: [AppComponent]
