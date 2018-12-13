@@ -4,6 +4,7 @@
 @import "../../spacings/css/spacings.scss";
 
 $height-header-mobile: 85px;
+$height-quote: 580px;
 
 .l-off-canvas {
     background-color: $white;
@@ -49,6 +50,8 @@ $height-header-mobile: 85px;
     }
 
     @media (min-width: $mq-size-m) {
+        margin: 0;
+
         &::before {
             background-color: $can-grey;
             content: "";
@@ -58,6 +61,15 @@ $height-header-mobile: 85px;
             top: 175px;
             width: 100vw;
         }
+    }
+}
+
+.l-page-outer--quote {
+    @media (min-width: $mq-size-m) {
+        background: url("./assets/img/stone-foggy.png") no-repeat center center;
+        background-size: cover;
+        height: $height-quote;
+        margin: 0;
     }
 }
 
