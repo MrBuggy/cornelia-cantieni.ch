@@ -8,6 +8,7 @@ import { PageComponentLibraryComponent } from "./page-component-library/page-com
 import { ButtonViewComponent } from "./views/components/button-view/button-view.component";
 import { InputViewComponent } from "./views/components/input-view/input-view.component";
 import { LinkViewComponent } from "./views/components/link-view/link-view.component";
+import { HeaderViewComponent } from "./views/components/header-view/header-view.component";
 
 // pages
 import { PageHomeComponent } from "./views/pages/page-home/page-home.component";
@@ -33,6 +34,10 @@ const routes: Routes = [
     {
         path: "library/link-view",
         component: LinkViewComponent
+    },
+    {
+        path: "library/header-view",
+        component: HeaderViewComponent
     },
     {
         path: "library/page-home",

@@ -1,0 +1,42 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/gradients/css/gradients.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+
+$logo-height: 45px;
+$logo-height-large: 90px;
+$logo-width: 150px;
+$logo-width-large: 300px;
+$padding-bottom-header-top: 40px;
+
+.can-header {
+    display: flex;
+    flex-direction: column;
+    padding: $space-super-small 0;
+    width: 100%;
+
+    @media (min-width: $mq-size-m) {
+        padding: $space-medium 0 0;
+    }
+}
+
+.can-header__top {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (min-width: $mq-size-m) {
+        padding-bottom: $padding-bottom-header-top;
+    }
+}
+
+.can-header__logo {
+    height: $logo-height;
+    width: $logo-width;
+
+    @media (min-width: $mq-size-m) {
+        height: $logo-height-large;
+        width: $logo-width-large;
+    }
+}

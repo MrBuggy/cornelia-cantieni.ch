@@ -1,0 +1,55 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+
+.can-hamburger {
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+    width: 35px;
+
+    @media (min-width: $mq-size-m) {
+        display: none;
+    }
+}
+
+.can-hamburger__bar {
+    background-color: $can-blue-gradient-light;
+    border-radius: 5px;
+    display: block;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    &:nth-child(1) {
+        top: 0px;
+    }
+
+    &:nth-child(2) {
+        top: 10px;
+    }
+
+    &:nth-child(3) {
+        top: 20px;
+    }
+}
+
+.state-can-hamburger--open {
+    .can-hamburger__bar:nth-child(1) {
+        top: 10px;
+        transform: rotate(45deg);
+    }
+
+    .can-hamburger__bar:nth-child(2) {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    .can-hamburger__bar:nth-child(3) {
+        top: 10px;
+        transform: rotate(-45deg);
+    }
+}
