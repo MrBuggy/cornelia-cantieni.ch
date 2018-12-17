@@ -20,7 +20,5 @@ export class PageComponentLibraryComponent {
         new Route("Quote", "quote-view")
     ];
 
-    pagesList: Array<Route> = [
-        new Route("Page-Home", "page-home")
-    ];
+    pagesList: Array<Route> = [new Route("Page-Home", "page-home")];
 }
