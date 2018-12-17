@@ -5,14 +5,15 @@
                 <h1 class="library__header">Page and Component Library</h1>
                 <section class="library__content">
                     <h2 class="library__content-header">Components</h2>
-                    <section class="library-content__item">
-                        <a
-                            class="library__content-item-link"
-                            *ngFor="let component of componentsList"
-                            [routerLink]="component.link"
-                            >{{ component.name }}</a
-                        >
-                    </section>
+                    <ul class="library-content__list">
+                        <li *ngFor="let component of componentsList">
+                            <a
+                                class="library__content-item-link"
+                                [routerLink]="component.link"
+                                >{{ component.name }}</a
+                            >
+                        </li>
+                    </ul>
                 </section>
             </article>
         </div>
@@ -24,14 +25,15 @@
             <article class="library">
                 <section class="library__content">
                     <h2 class="library__content-header">Pages</h2>
-                    <section class="library__content__item">
-                        <a
-                            class="library__content-item-link"
-                            *ngFor="let page of pagesList"
-                            [routerLink]="page.link"
-                            >{{ page.name }}</a
-                        >
-                    </section>
+                    <ul class="library-content__list">
+                        <li *ngFor="let page of pagesList">
+                            <a
+                                class="library__content-item-link"
+                                [routerLink]="page.link"
+                                >{{ page.name }}</a
+                            >
+                        </li>
+                    </ul>
                 </section>
             </article>
         </div>

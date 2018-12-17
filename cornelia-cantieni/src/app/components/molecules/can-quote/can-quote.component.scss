@@ -1,0 +1,39 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+@import "../../../../shared/utils//typo/css/typo.scss";
+
+.can-quote {
+
+}
+
+.can-quote__text-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media (min-width: $mq-size-m) {
+        background-color: rgba($white, 0.8);
+        padding: $space-super-large-desktop;
+    }
+}
+
+.can-quote__text {
+    @include fontSize(22px);
+    @include typo-italic();
+    color: $can-blue-sea;
+    padding-bottom: $space-medium;
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(40px);
+    }
+}
+
+.can-quote__author {
+    @include fontSize(14px);
+    color: $can-blue-sea;
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(24px);
+    }
+}

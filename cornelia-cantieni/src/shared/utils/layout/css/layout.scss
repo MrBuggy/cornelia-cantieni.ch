@@ -3,7 +3,9 @@
 @import "../../gradients/css/gradients.scss";
 @import "../../spacings/css/spacings.scss";
 
+$body-padding-top: 85px;
 $height-header-mobile: 85px;
+$height-quote: 580px;
 
 .l-off-canvas {
     background-color: $white;
@@ -26,6 +28,14 @@ $height-header-mobile: 85px;
     z-index: 10;
 }
 
+.l-page {
+    padding-top: $body-padding-top;
+
+    @media (min-width: $mq-size-m) {
+        padding-top: 0;
+    }
+}
+
 .l-page-outer {
     margin: $space-small-desktop 0;
 
@@ -36,7 +46,12 @@ $height-header-mobile: 85px;
 
 .l-page-outer--header {
     margin-top: 0;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: $white;
+    width: 100%;
 
     &::after {
         @include gradient-base();
@@ -49,6 +64,8 @@ $height-header-mobile: 85px;
     }
 
     @media (min-width: $mq-size-m) {
+        margin: 0;
+
         &::before {
             background-color: $can-grey;
             content: "";
@@ -58,6 +75,16 @@ $height-header-mobile: 85px;
             top: 175px;
             width: 100vw;
         }
+    }
+}
+
+.l-page-outer--quote {
+    @media (min-width: $mq-size-m) {
+        background: url("./assets/img/stone-foggy.png") no-repeat center center;
+        background-size: cover;
+        height: $height-quote;
+        margin: 0;
+        margin-top: 248px;
     }
 }
 
