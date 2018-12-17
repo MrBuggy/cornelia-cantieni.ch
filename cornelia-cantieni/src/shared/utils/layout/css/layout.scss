@@ -3,6 +3,7 @@
 @import "../../gradients/css/gradients.scss";
 @import "../../spacings/css/spacings.scss";
 
+$body-padding-top: 85px;
 $height-header-mobile: 85px;
 $height-quote: 580px;
 
@@ -25,6 +26,14 @@ $height-quote: 580px;
 .l-off-canvas--open {
     opacity: 1;
     z-index: 10;
+}
+
+.l-page {
+    padding-top: $body-padding-top;
+
+    @media (min-width: $mq-size-m) {
+        padding-top: 0;
+    }
 }
 
 .l-page-outer {
