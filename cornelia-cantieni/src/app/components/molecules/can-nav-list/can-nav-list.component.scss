@@ -4,6 +4,7 @@
 @import "../../../../shared/utils/typo/css/typo.scss";
 
 $padding-left-list: 14px;
+$padding-top-list: 19px;
 
 .can-nav-list {
     display: none;
@@ -16,7 +17,7 @@ $padding-left-list: 14px;
 .can-nav-list__list {
     display: flex;
     flex-direction: row;
-    padding: $space-medium 0 0 $padding-left-list;
+    padding: $padding-top-list 0 0 $padding-left-list;
 }
 
 .can-nav-list__list-item {
