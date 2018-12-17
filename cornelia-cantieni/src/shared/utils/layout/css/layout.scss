@@ -2,6 +2,7 @@
 @import "../../colors/css/colors.scss";
 @import "../../gradients/css/gradients.scss";
 @import "../../spacings/css/spacings.scss";
+@import "../../z-index/css/z-index.scss";
 
 $body-padding-top: 80px;
 $height-header-mobile: 85px;
@@ -9,6 +10,7 @@ $height-quote: 580px;
 $margin-top-quote: 243px;
 
 .l-off-canvas {
+    @include z-index-negative();
     background-color: $white;
     height: calc(100% - #{$height-header-mobile});
     left: 0;
@@ -17,7 +19,6 @@ $margin-top-quote: 243px;
     top: $height-header-mobile;
     transition: opacity 0.3s ease-in-out;
     width: 100%;
-    z-index: -1;
 
     @media (min-width: $mq-size-m) {
         display: none;
@@ -25,8 +26,8 @@ $margin-top-quote: 243px;
 }
 
 .l-off-canvas--open {
+    @include z-index('offcanvas');
     opacity: 1;
-    z-index: 10;
 }
 
 .l-page {
@@ -46,12 +47,12 @@ $margin-top-quote: 243px;
 }
 
 .l-page-outer--header {
+    @include z-index('stickyheader');
+    background: $white;
+    left: 0;
     margin-top: 0;
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 5;
-    background: $white;
     width: 100%;
 
     &::after {
