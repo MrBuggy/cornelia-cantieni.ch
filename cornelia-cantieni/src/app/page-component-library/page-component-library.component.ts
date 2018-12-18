@@ -17,7 +17,8 @@ export class PageComponentLibraryComponent {
         new Route("Input", "input-view"),
         new Route("Link", "link-view"),
         new Route("Header", "header-view"),
-        new Route("Quote", "quote-view")
+        new Route("Quote", "quote-view"),
+        new Route("Link-Tiles", "link-tiles-view")
     ];
 
     pagesList: Array<Route> = [new Route("Page-Home", "page-home")];

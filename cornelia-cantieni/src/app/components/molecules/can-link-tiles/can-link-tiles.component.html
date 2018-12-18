@@ -1,3 +1,9 @@
-<p>
-  can-link-tiles works!
-</p>
+<div class="can-link-tiles">
+    <div class="can-link-tiles-wrap" *ngFor="let tile of tiles">
+        <div class="can-link-tiles-header">
+            <span class="can-link-tiles-title">{{tile.title}}</span>
+            <span class="can-link-tiles-text">{{tile.text}}</span>
+        </div>
+        <can-button [modifier]="'tile'" [text]="tile.btnText"></can-button>
+    </div>
+</div>
