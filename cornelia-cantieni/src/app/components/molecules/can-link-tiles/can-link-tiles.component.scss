@@ -27,9 +27,9 @@ $tile-height-desktop: 300px;
     }
 
     @media (min-width: $mq-size-m) {
-        flex: 0 0 48%;
         min-height: $tile-height-desktop;
         padding: $space-large;
+        width: 48%;
 
         &:nth-child(1),
         &:nth-child(2) {
