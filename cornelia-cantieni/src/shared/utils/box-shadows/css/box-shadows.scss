@@ -1,1 +1,15 @@
-// TODO
+@import "../../colors/css/colors.scss";
+
+@function getBoxShadow($component, $box-shadow) {
+    @if $component == link-tiles {
+        $box-shadow: 0px 10px 65px -5px rgba($can-grey, 1);
+    } @else {
+        @error "$component: `#{$component}` is an unknown component name for box-shadows.";
+    }
+
+    @return $box-shadow;
+}
+
+@mixin box-shadow($component) {
+    box-shadow: getBoxShadow($component, $box-shadow: 0);
+}

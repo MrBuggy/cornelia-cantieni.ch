@@ -1,0 +1,76 @@
+@import "../../../../shared/utils/box-shadows/css/box-shadows.scss";
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+@import "../../../../shared/utils/typo/css/typo.scss";
+
+$tile-height-mobile: 250px;
+$tile-height-desktop: 300px;
+
+.can-link-tiles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.can-link-tiles-wrap {
+    @include box-shadow(link-tiles);
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: $space-large;
+    min-height: $tile-height-mobile;
+    padding: $space-medium;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $mq-size-m) {
+        flex: 0 0 48%;
+        min-height: $tile-height-desktop;
+        padding: $space-large;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: $space-large;
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(2),
+        &:nth-child(4) {
+            margin-left: $space-medium-desktop;
+        }
+    }
+}
+
+.can-link-tiles-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.can-link-tiles-title {
+    @include fontSize(18px);
+    @include typo-semibold();
+    color: $can-blue-sea;
+    padding-bottom: $space-small;
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(20px);
+        padding-bottom: $space-small-desktop;
+    }
+}
+
+.can-link-tiles-text {
+    @include fontSize(14px);
+    color: $can-blue-sea;
+    padding-bottom: $space-large;
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(16px);
+        padding-bottom: $space-xx-large;
+    }
+}

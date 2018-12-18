@@ -1,2 +1,17 @@
-// TODO
 // Based on https://webdevstudios.com/2015/09/22/using-sass-to-manage-layers-z-index/
+
+// the first element in $layers is on the top (high z-index)
+// The last element in $layers list is on the bottom (low z-index)
+$layers: ("offcanvas", "stickyheader") !default;
+
+@function layer-index($layer, $adjust: 0) {
+    @return (1 + length($layers) - index($layers, $layer)) * 10 + $adjust;
+}
+
+@mixin z-index-negative() {
+    z-index: -1;
+}
+
+@mixin z-index($layer, $adjust: 0) {
+    z-index: layer-index($layer, $adjust);
+}

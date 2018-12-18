@@ -3,6 +3,7 @@
 @import "../../../../shared/utils/outline/css/outline.scss";
 @import "../../../../shared/utils/spacings/css/spacings.scss";
 @import "../../../../shared/utils/typo/css/typo.scss";
+@import "../../../../shared/utils/z-index/css/z-index.scss";
 
 $transition-properties: 0.3s ease-in-out;
 
@@ -27,6 +28,7 @@ $transition-properties: 0.3s ease-in-out;
         width: auto;
 
         &::before {
+            @include z-index-negative();
             background-color: $can-blue-sea;
             bottom: 0;
             content: "";
@@ -36,7 +38,6 @@ $transition-properties: 0.3s ease-in-out;
             position: absolute;
             transition: width $transition-properties;
             width: 0;
-            z-index: -1;
         }
 
         &:active,
