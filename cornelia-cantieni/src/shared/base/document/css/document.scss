@@ -3,11 +3,6 @@
 @import "../../../utils/lists/css/lists.scss";
 @import "../../../utils/webfonts/css/webfonts.scss";
 
-html,
-body {
-    // min-height: 100vh;
-}
-
 body {
     font-family: $montserrat-regular, $font-family-fallback;
     margin: 0;
