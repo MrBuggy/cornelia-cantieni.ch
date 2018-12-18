@@ -7,12 +7,12 @@ import { Component, OnInit } from "@angular/core";
 })
 export class CanNavListComponent implements OnInit {
     navList = [
-        { name: "HOME" },
-        { name: "PORTRAIT" },
-        { name: "ANGEBOTE" },
-        { name: "TARIFE" },
-        { name: "PROJEKTE" },
-        { name: "KONTAKT" }
+        { name: "Home", anchor: "home" },
+        { name: "Portrait", anchor: "portrait" },
+        { name: "Angebote", anchor: "offers" },
+        { name: "Tarife", anchor: "rates" },
+        { name: "Projekte", anchor: "projects" },
+        { name: "Kontakt", anchor: "conact" }
     ]
 
     constructor() {}

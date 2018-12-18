@@ -1,0 +1,26 @@
+
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+@import "../../../../shared/utils/typo/css/typo.scss";
+
+.can-heading {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $mq-size-m) {
+        justify-content: flex-start;
+    }
+}
+
+.can-heading__title {
+    @include fontSize(22px);
+    @include typo-semibold();
+    color: $white;
+    text-transform: uppercase;
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(36px);
+        color: $can-blue-sea;
+    }
+}

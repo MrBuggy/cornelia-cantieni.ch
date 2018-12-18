@@ -11,6 +11,7 @@ import { LinkViewComponent } from "./views/components/link-view/link-view.compon
 import { HeaderViewComponent } from "./views/components/header-view/header-view.component";
 import { QuoteViewComponent } from "./views/components/quote-view/quote-view.component";
 import { LinkTilesViewComponent } from "./views/components/link-tiles-view/link-tiles-view.component";
+import { HeadingViewComponent } from "./views/components/heading-view/heading-view.component";
 
 // pages
 import { PageHomeComponent } from "./views/pages/page-home/page-home.component";
@@ -48,6 +49,10 @@ const routes: Routes = [
     {
         path: "library/link-tiles-view",
         component: LinkTilesViewComponent
+    },
+    {
+        path: "library/heading-view",
+        component: HeadingViewComponent
     },
     {
         path: "library/page-home",

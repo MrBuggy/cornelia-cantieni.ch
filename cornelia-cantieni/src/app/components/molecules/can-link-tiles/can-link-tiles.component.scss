@@ -29,7 +29,7 @@ $tile-height-desktop: 300px;
     @media (min-width: $mq-size-m) {
         min-height: $tile-height-desktop;
         padding: $space-large;
-        width: 48%;
+        width: 47%;
 
         &:nth-child(1),
         &:nth-child(2) {
@@ -57,6 +57,7 @@ $tile-height-desktop: 300px;
     @include typo-semibold();
     color: $can-blue-sea;
     padding-bottom: $space-small;
+    text-transform: uppercase;
 
     @media (min-width: $mq-size-m) {
         @include fontSize(20px);

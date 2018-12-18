@@ -46,6 +46,14 @@ $margin-top-quote: 243px;
     }
 }
 
+.l-page-outer--gradient {
+    @include gradient-base();
+
+    @media (min-width: $mq-size-m) {
+        background: $white;
+    }
+}
+
 .l-page-outer--header {
     @include z-index('stickyheader');
     background: $white;

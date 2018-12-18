@@ -21,9 +21,13 @@ $padding-top-list: 19px;
 }
 
 .can-nav-list__list-item {
-    @include fontSize(18px);
-    color: $can-grey-dark;
     padding-right: $space-xx-large;
+}
+
+.can-nav-list__link {
+    @include fontSize(18px);
+    border-bottom: none;
+    color: $can-grey-dark;
     transition: color 0.3s ease-in-out;
 
     &:hover {

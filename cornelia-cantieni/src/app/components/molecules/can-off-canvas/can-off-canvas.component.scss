@@ -11,8 +11,13 @@
 }
 
 .can-off-canvas__list-item {
-    color: $can-grey-dark;
     padding: $space-small-desktop 0;
+}
+
+.can-off-canvas__link {
+    border-bottom: none;
+    color: $can-grey-dark;
+    text-transform: uppercase;
 }
 
 .state-can-off-canvas__list-item--active {
