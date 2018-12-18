@@ -1,15 +1,20 @@
 @import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
 @import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/icons/css/icons.scss";
 @import "../../../../shared/utils/spacings/css/spacings.scss";
 @import "../../../../shared/utils//typo/css/typo.scss";
 
-.can-quote {
+$quote-left-right: -12px;
+$quote-left-right-mobile: -25px;
 
+.can-quote {
+    padding: $space-medium-desktop 0;
 }
 
 .can-quote__text-wrap {
     display: flex;
     flex-direction: column;
+    padding: 0 $space-small-desktop;
     text-align: center;
 
     @media (min-width: $mq-size-m) {
@@ -23,6 +28,37 @@
     @include typo-italic();
     color: $can-blue-sea;
     padding-bottom: $space-medium;
+
+    strong {
+        font-weight: 100;
+        position: relative;
+    }
+
+    strong:nth-child(1)::before,
+    strong:nth-child(2)::after {
+        position: absolute;
+    }
+
+    strong:nth-child(1)::before {
+        @include fasIcon(quote-left, 10px);
+        left: $quote-left-right;
+        top: 0px;
+
+        @media (min-width: $mq-size-m) {
+            left: $quote-left-right-mobile;
+        }
+    }
+
+    strong:nth-child(2)::after {
+        @include fasIcon(quote-right, 10px);
+        right: $quote-left-right;
+        top: 17px;
+
+        @media (min-width: $mq-size-m) {
+            right: $quote-left-right-mobile;
+            top: 32px;
+        }
+    }
 
     @media (min-width: $mq-size-m) {
         @include fontSize(40px);

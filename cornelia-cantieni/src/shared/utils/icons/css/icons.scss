@@ -16,6 +16,10 @@ $icon-font-weight: 900;
         $icon-name: "\f3c5";
     } @else if $icon-name == plus {
         $icon-name: "\f067";
+    } @else if $icon-name == quote-left {
+        $icon-name: "\f10d";
+    } @else if $icon-name == quote-right {
+        $icon-name: "\f10e";
     } @else if $icon-name == times {
         $icon-name: "\f00d";
     } @else if $icon-name == times-circle {
