@@ -13,7 +13,7 @@ $tile-height-desktop: 300px;
 }
 
 .can-link-tiles-wrap {
-    @include box-shadow();
+    @include box-shadow(link-tiles);
     background-color: $white;
     display: flex;
     flex-direction: column;
