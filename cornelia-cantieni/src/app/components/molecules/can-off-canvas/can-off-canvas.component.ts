@@ -34,7 +34,6 @@ export class CanOffCanvasComponent implements OnInit {
 
     toggleCanvas() {
         let offCanvas = document.querySelector(this._selectors.layoutCanvas);
-        console.log(offCanvas);
         offCanvas.classList.toggle(this._states.layoutCanvasOpen);
     }
 }
