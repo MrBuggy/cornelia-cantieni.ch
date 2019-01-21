@@ -7,12 +7,12 @@ import { NavigationService } from "../../../services/navigation.service";
     styleUrls: ["./can-off-canvas.component.scss"]
 })
 export class CanOffCanvasComponent implements OnInit {
-    _selectors = {
+    selectors = {
         layoutCanvas: ".l-off-canvas",
         layoutPage: ".l-page"
     };
 
-    _states = {
+    states = {
         layoutCanvasOpen: "state-l-off-canvas--open",
         layoutPageNoScroll: "state-l-page--no-scroll"
     };
@@ -35,10 +35,10 @@ export class CanOffCanvasComponent implements OnInit {
     }
 
     toggleCanvas() {
-        let offCanvas = document.querySelector(this._selectors.layoutCanvas);
-        let layoutPage = document.querySelector(this._selectors.layoutPage);
+        let offCanvas = document.querySelector(this.selectors.layoutCanvas);
+        let layoutPage = document.querySelector(this.selectors.layoutPage);
 
-        offCanvas.classList.toggle(this._states.layoutCanvasOpen);
-        layoutPage.classList.toggle(this._states.layoutPageNoScroll);
+        offCanvas.classList.toggle(this.states.layoutCanvasOpen);
+        layoutPage.classList.toggle(this.states.layoutPageNoScroll);
     }
 }
