@@ -10,6 +10,8 @@ Font Aweosme Icons `minified css file` is importet in the global [styles.scss](.
 * `copyright` Docs: [Source](https://fontawesome.com/icons/copyright?style=regular)
 * `map-marker-alt` Docs: [Source](https://fontawesome.com/icons/map-marker-alt?style=regular)
 * `plus` Docs: [Source](https://fontawesome.com/icons/plus?style=regular)
+* `quote-left` Docs: [Source](https://fontawesome.com/icons/quote-left?style=solid)
+* `quote-right` Docs [Source](https://fontawesome.com/icons/quote-right?style=solid)
 * `times` Docs: [Source](https://fontawesome.com/icons/times?style=regular)
 * `times-circle` Docs: [Source](https://fontawesome.com/icons/times-circle?style=regular)
 

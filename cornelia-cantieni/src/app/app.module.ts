@@ -21,9 +21,13 @@ import { CanQuoteComponent } from './components/molecules/can-quote/can-quote.co
 import { QuoteViewComponent } from './views/components/quote-view/quote-view.component';
 import { CanLinkTilesComponent } from './components/molecules/can-link-tiles/can-link-tiles.component';
 import { LinkTilesViewComponent } from './views/components/link-tiles-view/link-tiles-view.component';
+import { CanHeadingComponent } from './components/atoms/can-heading/can-heading.component';
+import { HeadingViewComponent } from './views/components/heading-view/heading-view.component';
+import { CanRichtextComponent } from './components/atoms/can-richtext/can-richtext.component';
+import { RichtextViewComponent } from './views/components/richtext-view/richtext-view.component';
 
 @NgModule({
-    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent, CanHamburgerComponent, CanNavListComponent, CanOffCanvasComponent, CanQuoteComponent, QuoteViewComponent, CanLinkTilesComponent, LinkTilesViewComponent],
+    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent, CanHamburgerComponent, CanNavListComponent, CanOffCanvasComponent, CanQuoteComponent, QuoteViewComponent, CanLinkTilesComponent, LinkTilesViewComponent, CanHeadingComponent, HeadingViewComponent, CanRichtextComponent, RichtextViewComponent],
     imports: [BrowserModule, AppRoutingModule, FormsModule],
     providers: [],
     bootstrap: [AppComponent]

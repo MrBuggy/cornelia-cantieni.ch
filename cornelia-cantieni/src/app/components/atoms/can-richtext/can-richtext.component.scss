@@ -1,0 +1,12 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/typo/css/typo.scss";
+
+.can-richtext {
+    @include fontSize(14px);
+    color: $can-blue-sea;
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(24px);
+    }
+}
