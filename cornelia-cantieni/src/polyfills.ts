@@ -78,3 +78,6 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+/* object-fit-images for IE11: https://www.npmjs.com/package/object-fit-images */
+import objectFitImages from 'object-fit-images';
+objectFitImages();
