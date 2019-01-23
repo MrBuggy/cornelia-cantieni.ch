@@ -13,6 +13,7 @@ import { QuoteViewComponent } from "./views/components/quote-view/quote-view.com
 import { LinkTilesViewComponent } from "./views/components/link-tiles-view/link-tiles-view.component";
 import { HeadingViewComponent } from "./views/components/heading-view/heading-view.component";
 import { RichtextViewComponent } from "./views/components/richtext-view/richtext-view.component";
+import { ImageViewComponent } from "./views/components/image-view/image-view.component";
 
 // pages
 import { PageHomeComponent } from "./views/pages/page-home/page-home.component";
@@ -20,7 +21,7 @@ import { PageHomeComponent } from "./views/pages/page-home/page-home.component";
 const routes: Routes = [
     {
         path: "",
-        redirectTo: "/library",
+        redirectTo: location.hostname === 'localhost' ? "/library" : "library/page-home",
         pathMatch: "full"
     },
     {
@@ -58,6 +59,10 @@ const routes: Routes = [
     {
         path: "library/richtext-view",
         component: RichtextViewComponent
+    },
+    {
+        path: "library/image-view",
+        component: ImageViewComponent
     },
     {
         path: "library/page-home",

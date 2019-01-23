@@ -25,9 +25,11 @@ import { CanHeadingComponent } from './components/atoms/can-heading/can-heading.
 import { HeadingViewComponent } from './views/components/heading-view/heading-view.component';
 import { CanRichtextComponent } from './components/atoms/can-richtext/can-richtext.component';
 import { RichtextViewComponent } from './views/components/richtext-view/richtext-view.component';
+import { CanImageComponent } from './components/atoms/can-image/can-image.component';
+import { ImageViewComponent } from './views/components/image-view/image-view.component';
 
 @NgModule({
-    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent, CanHamburgerComponent, CanNavListComponent, CanOffCanvasComponent, CanQuoteComponent, QuoteViewComponent, CanLinkTilesComponent, LinkTilesViewComponent, CanHeadingComponent, HeadingViewComponent, CanRichtextComponent, RichtextViewComponent],
+    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent, CanHamburgerComponent, CanNavListComponent, CanOffCanvasComponent, CanQuoteComponent, QuoteViewComponent, CanLinkTilesComponent, LinkTilesViewComponent, CanHeadingComponent, HeadingViewComponent, CanRichtextComponent, RichtextViewComponent, CanImageComponent, ImageViewComponent],
     imports: [BrowserModule, AppRoutingModule, FormsModule],
     providers: [],
     bootstrap: [AppComponent]
