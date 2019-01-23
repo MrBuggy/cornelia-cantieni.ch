@@ -9,6 +9,7 @@ export class CanImageComponent implements OnInit {
     @Input() imgAlt: string;
     @Input() imgSrc: string;
     @Input() modifier: string;
+    offset = 100;
 
     constructor() { }
 

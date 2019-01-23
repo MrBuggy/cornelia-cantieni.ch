@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule } from '@angular/forms';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -30,7 +31,7 @@ import { ImageViewComponent } from './views/components/image-view/image-view.com
 
 @NgModule({
     declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent, CanHamburgerComponent, CanNavListComponent, CanOffCanvasComponent, CanQuoteComponent, QuoteViewComponent, CanLinkTilesComponent, LinkTilesViewComponent, CanHeadingComponent, HeadingViewComponent, CanRichtextComponent, RichtextViewComponent, CanImageComponent, ImageViewComponent],
-    imports: [BrowserModule, AppRoutingModule, FormsModule],
+    imports: [BrowserModule, AppRoutingModule, FormsModule, LazyLoadImageModule],
     providers: [],
     bootstrap: [AppComponent]
 })
