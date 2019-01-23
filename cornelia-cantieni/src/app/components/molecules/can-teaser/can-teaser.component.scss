@@ -1,0 +1,65 @@
+@import "../../../../shared/utils/box-shadows/css/box-shadows.scss";
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+@import "../../../../shared/utils/typo/css/typo.scss";
+
+$teaser-image-height: 360px;
+$teaser-image-height-desktop: 500px;
+
+.can-teaser {
+    @include box-shadow(link-tiles);
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $mq-size-m) {
+        flex-direction: row;
+    }
+}
+
+.can-teaser__img-container {
+    height: $teaser-image-height;
+
+    @media (min-width: $mq-size-m) {
+        height: $teaser-image-height-desktop;
+        width: 50%
+    }
+}
+
+.can-teaser__text-container {
+    display: flex;
+    flex-direction: column;
+    padding: $space-small-desktop $space-medium $space-xx-large;
+
+    @media (min-width: $mq-size-m) {
+        padding: $space-xx-large $space-medium-desktop $space-xx-large;
+        width: 50%
+    }
+}
+
+.can-teaser__title,
+.can-teaser__text {
+    color: $can-blue-sea;
+}
+
+.can-teaser__title {
+    @include fontSize(18px);
+    @include typo-bold();
+    padding-bottom: $space-small-desktop;
+    text-transform: uppercase;
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(22px);
+    }
+}
+
+.can-teaser__text {
+    @include fontSize(14px);
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(18px);
+    }
+}
+
+@import "./modifier/reverse.scss";
+@import "./modifier/textonly.scss";

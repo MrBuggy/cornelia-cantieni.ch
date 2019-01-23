@@ -95,6 +95,7 @@ $margin-top-quote: 243px;
 .l-page-outer--quote {
     @media (min-width: $mq-size-m) {
         background: url("./assets/img/stone-foggy.png") no-repeat center center;
+        background-attachment: fixed;
         background-size: cover;
         height: $height-quote;
         margin: 0;
