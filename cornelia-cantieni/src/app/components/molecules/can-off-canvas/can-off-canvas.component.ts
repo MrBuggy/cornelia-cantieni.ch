@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { NavigationService } from "../../../services/navigation.service";
+import { NavLink } from '../../../models/navLink';
 
 @Component({
     selector: "can-off-canvas",
@@ -17,14 +18,14 @@ export class CanOffCanvasComponent implements OnInit {
         layoutPageNoScroll: "state-l-page--no-scroll"
     };
 
-    navList = [
-        { name: "Home", anchor: "home" },
-        { name: "Portrait", anchor: "portrait" },
-        { name: "Angebote", anchor: "offers" },
-        { name: "Tarife", anchor: "rates" },
-        { name: "Projekte", anchor: "projects" },
-        { name: "Kontakt", anchor: "contact" }
-    ]
+    navList: Array<NavLink> = [
+        new NavLink ('Home', 'home'),
+        new NavLink ('Portrait', 'portrait'),
+        new NavLink ('Angebote', 'offers'),
+        new NavLink ('Tarife', 'rates'),
+        new NavLink ('Projekte', 'projects'),
+        new NavLink ('Kontakt', 'contact')
+    ];
 
     constructor(private navigationService: NavigationService) {}
 

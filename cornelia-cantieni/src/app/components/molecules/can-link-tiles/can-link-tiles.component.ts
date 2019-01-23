@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { TileValue } from '../../../models/tileValue';
 
 @Component({
     selector: "can-link-tiles",
@@ -6,30 +7,31 @@ import { Component, OnInit } from "@angular/core";
     styleUrls: ["./can-link-tiles.component.scss"]
 })
 export class CanLinkTilesComponent implements OnInit {
-    tiles = [
-        {
-            title: "Portrait",
-            text: "Ein Einblick über meine Aus- und Weiterbildung, meine Arbeitsmethoden und mein Privatleben.",
-            btnText: "Mehr erfahren"
-        },
-        {
-            title: "Angebote",
-            text: "Schauen Sie sich meine breite Palette an Angeboten, wie Coaching oder Organisationsberatung an.",
-            btnText: "Mehr erfahren"
-        },
-        {
-            title: "Projekte",
-            text: "Eine Vielzahl von erfolgreich abgeschlossenen Projekten sind eine schlagkräftige Referenz meiner Arbeit.",
-            btnText: "Mehr erfahren"
-        },
-        {
-            title: "Kontakt",
-            text: "Zögern Sie nicht, mich telefonisch oder per E-Mail zu kontaktieren. Ich stehe Ihnen jederzeit zur Verfügung.",
-            btnText: "Mehr erfahren"
-        }
-    ]
+    tiles: Array<TileValue> = [
+        new TileValue (
+            "Portrait",
+            "Ein Einblick über meine Aus- und Weiterbildung, meine Arbeitsmethoden und mein Privatleben.",
+            "Mehr erfahren"
+        ),
 
-    constructor() {}
+        new TileValue (
+            "Angebote",
+            "Schauen Sie sich meine breite Palette an Angeboten, wie Coaching oder Organisationsberatung an.",
+            "Mehr erfahren"
+        ),
+        new TileValue (
+            "Projekte",
+            "Eine Vielzahl von erfolgreich abgeschlossenen Projekten sind eine schlagkräftige Referenz meiner Arbeit.",
+            "Mehr erfahren"
+        ),
+        new TileValue (
+            "Kontakt",
+            "Zögern Sie nicht, mich telefonisch oder per E-Mail zu kontaktieren. Ich stehe Ihnen jederzeit zur Verfügung.",
+            "Mehr erfahren"
+        )
+    ];
 
-    ngOnInit() {}
+    constructor() { }
+
+    ngOnInit() { }
 }
