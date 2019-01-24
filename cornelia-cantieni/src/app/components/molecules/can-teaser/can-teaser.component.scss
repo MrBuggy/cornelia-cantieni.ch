@@ -44,12 +44,12 @@ $teaser-image-height-desktop: 500px;
 
 .can-teaser__title {
     @include fontSize(18px);
-    @include typo-bold();
+    @include typo-semibold();
     padding-bottom: $space-small-desktop;
     text-transform: uppercase;
 
     @media (min-width: $mq-size-m) {
-        @include fontSize(22px);
+        @include fontSize(20px);
     }
 }
 
@@ -57,7 +57,7 @@ $teaser-image-height-desktop: 500px;
     @include fontSize(14px);
 
     @media (min-width: $mq-size-m) {
-        @include fontSize(18px);
+        @include fontSize(16px);
     }
 }
 
