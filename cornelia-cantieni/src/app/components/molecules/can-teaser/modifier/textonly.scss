@@ -1,0 +1,16 @@
+@import "../../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../../shared/utils/spacings/css/spacings.scss";
+
+.can-teaser--textonly {
+    padding: $space-medium 0;
+
+    .can-teaser__img-container {
+        display: none;
+    }
+
+    .can-teaser__text-container {
+        @media (min-width: $mq-size-m) {
+            width: 100%;
+        }
+    }
+}

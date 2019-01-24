@@ -1,0 +1,11 @@
+<div class="can-teaser{{ modifier !== undefined ? ' can-teaser--' + modifier : ''}}">
+    <div class="can-teaser__img-container" *ngIf="showImg">
+        <can-image [imgSrc]="imgSrc" [imgAlt]="imgAlt" [modifier]="'top'"></can-image>
+    </div>
+    <div class="can-teaser__text-container">
+        <span class="can-teaser__title">{{teaserTitle}}</span>
+        <span class="can-teaser__text">
+            {{teaserText}}
+        </span>
+    </div>
+</div>
