@@ -30,9 +30,11 @@ import { CanImageComponent } from './components/atoms/can-image/can-image.compon
 import { ImageViewComponent } from './views/components/image-view/image-view.component';
 import { CanTeaserComponent } from './components/molecules/can-teaser/can-teaser.component';
 import { TeaserViewComponent } from './views/components/teaser-view/teaser-view.component';
+import { AccordionViewComponent } from './views/components/accordion-view/accordion-view.component';
+import { CanAccordionComponent } from './components/molecules/can-accordion/can-accordion.component';
 
 @NgModule({
-    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent, CanHamburgerComponent, CanNavListComponent, CanOffCanvasComponent, CanQuoteComponent, QuoteViewComponent, CanLinkTilesComponent, LinkTilesViewComponent, CanHeadingComponent, HeadingViewComponent, CanRichtextComponent, RichtextViewComponent, CanImageComponent, ImageViewComponent, CanTeaserComponent, TeaserViewComponent],
+    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent, CanHamburgerComponent, CanNavListComponent, CanOffCanvasComponent, CanQuoteComponent, QuoteViewComponent, CanLinkTilesComponent, LinkTilesViewComponent, CanHeadingComponent, HeadingViewComponent, CanRichtextComponent, RichtextViewComponent, CanImageComponent, ImageViewComponent, CanTeaserComponent, TeaserViewComponent, AccordionViewComponent, CanAccordionComponent],
     imports: [BrowserModule, AppRoutingModule, FormsModule, LazyLoadImageModule],
     providers: [],
     bootstrap: [AppComponent]

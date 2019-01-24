@@ -1,0 +1,107 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/icons/css/icons.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+@import "../../../../shared/utils/typo/css/typo.scss";
+
+$accordion-height: 780px;
+$accordion-item-height: 75px;
+
+.can-accordion {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $mq-size-m) {
+        flex-direction: row;
+        height: $accordion-height;
+    }
+}
+
+.can-accodrion__item {
+    border-bottom: 2px solid $white;
+    height: $accordion-item-height;
+    overflow: hidden;
+    position: relative;
+
+    &:nth-child(1) {
+        background: url("../../../../assets/img/cantieni-stone-foggy.png") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    &:nth-child(2) {
+        background: url("../../../../assets/img/cantieni-stone-wet.png") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    &:nth-child(3) {
+        background: url("../../../../assets/img/cantieni-stone-street.png") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    &:nth-child(4) {
+        background: url("../../../../assets/img/cantieni-snow.png") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+        border-bottom: none;
+    }
+
+    @media (min-width: $mq-size-m) {
+        border-right: 2px solid $white;
+        border-bottom: none;
+        height: 100%;
+        width: 25%;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &:nth-child(4) {
+            background-position: top;
+        }
+    }
+}
+
+.can-accordion__wrap {
+    background-color: $white;
+    color: $can-blue-sea;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    opacity: 0.7;
+    padding: $space-small-desktop $space-medium $space-xx-large;
+    width: 100%;
+
+    @media (min-width: $mq-size-m) {
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.can-accordion__title {
+    @include fontSize(18px);
+    @include typo-semibold();
+    padding: $space-small 0 $space-medium;
+    text-transform: uppercase;
+
+    &::after {
+        @include fasIcon(plus);
+        font-size: 20px;
+        position: absolute;
+        right: 25px;
+    }
+}
+
+.can-accordion__text {
+    @include fontSize(14px);
+    display: none;
+}
