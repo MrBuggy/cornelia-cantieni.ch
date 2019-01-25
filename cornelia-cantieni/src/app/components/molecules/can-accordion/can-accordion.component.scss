@@ -17,11 +17,12 @@ $accordion-item-height: 75px;
     }
 }
 
-.can-accodrion__item {
+.can-accordion__item {
     border-bottom: 2px solid $white;
     height: $accordion-item-height;
     overflow: hidden;
     position: relative;
+    transition: all 0.3s ease-in-out;
 
     &:nth-child(1) {
         background: url("../../../../assets/img/cantieni-stone-foggy.png") no-repeat center center;
@@ -98,10 +99,59 @@ $accordion-item-height: 75px;
         font-size: 20px;
         position: absolute;
         right: 25px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(20px);
+
+        &::after {
+            font-size: 22px;
+        }
     }
 }
 
 .can-accordion__text {
     @include fontSize(14px);
-    display: none;
+    @include typo-semibold();
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(16px);
+        display: none;
+    }
+}
+
+.state-can-accordion__item--open {
+    height: 100%;
+    overflow: visible;
+
+    .can-accordion__title::after {
+        transform: rotate(45deg);
+    }
+
+    @media (min-width: $mq-size-m) {
+        height: 100%;
+        width: 75%;
+
+        .can-accordion__text {
+            display: flex;
+        }
+    }
+}
+
+.state-can-accordion__item--collapsed {
+    @media (min-width: $mq-size-m) {
+        width: 8.33%;
+
+        .can-accordion__title {
+            padding-left: $space-super-large;
+            transform: rotate(90deg);
+        }
+
+        .can-accordion__title::after {
+            right: 52px;
+            right: 37px;
+            top: 13px;
+        }
+    }
 }
