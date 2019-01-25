@@ -149,9 +149,23 @@ $accordion-item-height: 75px;
         }
 
         .can-accordion__title::after {
-            right: 52px;
-            right: 37px;
-            top: 13px;
+            // right: 52px;
+            // top: 13px;
+            display: none;
+        }
+
+        .can-accordion__title::before {
+            @include fasIcon(plus);
+            font-size: 20px;
+            position: absolute;
+            left: 25px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    @media (min-width: $mq-size-xl) {
+        .can-accordion__title::before {
+            left: 40px;
         }
     }
 }
