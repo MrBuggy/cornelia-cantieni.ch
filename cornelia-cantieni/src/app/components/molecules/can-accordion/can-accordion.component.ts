@@ -6,6 +6,15 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./can-accordion.component.scss']
 })
 export class CanAccordionComponent implements OnInit {
+    selectors = {
+        accordionItem: ".can-accordion__item"
+    };
+
+    states = {
+        open: "state-can-accordion__item--open",
+        collapsed: "state-can-accordion__item--collapsed"
+    };
+
     activeIndex: number = 0;
     accordionList: Array<object> = [
         {
@@ -41,10 +50,10 @@ export class CanAccordionComponent implements OnInit {
         if (i === this.activeIndex && this.collapsed) {
             event.stopPropagation();
             this.collapsed = false;
-            const items = document.querySelectorAll(".can-accordion__item");
+            const items = document.querySelectorAll(this.selectors.accordionItem);
             [].forEach.call(items, (item: HTMLElement) => {
-                item.classList.remove("state-can-accordion__item--open");
-                item.classList.remove("state-can-accordion__item--collapsed");
+                item.classList.remove(this.states.open);
+                item.classList.remove(this.states.collapsed);
             });
         }
     }
