@@ -1,0 +1,11 @@
+<div class="can-accordion">
+    <div *ngFor="let item of accordionList, let i = index" class="can-accordion__item"
+    [class.state-can-accordion__item--open]="isOpen(i)"
+    [class.state-can-accordion__item--collapsed]="isCollapsed(i)"
+    (click)="toggleActiveItem(i)">
+        <div class="can-accordion__wrap">
+            <span class="can-accordion__title" (click)="resetAccordion(i, $event)">{{item.title}}</span>
+            <span class="can-accordion__text">{{item.text}}</span>
+        </div>
+    </div>
+</div>

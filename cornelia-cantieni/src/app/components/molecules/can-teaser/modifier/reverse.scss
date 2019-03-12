@@ -1,0 +1,7 @@
+@import "../../../../../shared/utils/breakpoints/css/breakpoints.scss";
+
+.can-teaser--reverse {
+    @media (min-width: $mq-size-m) {
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,171 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+@import "../../../../shared/utils/icons/css/icons.scss";
+@import "../../../../shared/utils/spacings/css/spacings.scss";
+@import "../../../../shared/utils/typo/css/typo.scss";
+
+$accordion-height: 780px;
+$accordion-item-height: 75px;
+
+.can-accordion {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $mq-size-m) {
+        flex-direction: row;
+        height: $accordion-height;
+    }
+}
+
+.can-accordion__item {
+    border-bottom: 2px solid $white;
+    height: $accordion-item-height;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    &:nth-child(1) {
+        background: url("../../../../assets/img/cantieni-stone-foggy.png") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    &:nth-child(2) {
+        background: url("../../../../assets/img/cantieni-stone-wet.png") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    &:nth-child(3) {
+        background: url("../../../../assets/img/cantieni-stone-street.png") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    &:nth-child(4) {
+        background: url("../../../../assets/img/cantieni-snow.png") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+        border-bottom: none;
+    }
+
+    @media (min-width: $mq-size-m) {
+        border-right: 2px solid $white;
+        border-bottom: none;
+        height: 100%;
+        width: 25%;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &:nth-child(4) {
+            background-position: top;
+        }
+    }
+}
+
+.can-accordion__wrap {
+    background-color: $white;
+    color: $can-blue-sea;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    opacity: 0.7;
+    padding: $space-small-desktop $space-medium $space-xx-large;
+    width: 100%;
+
+    @media (min-width: $mq-size-m) {
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.can-accordion__title {
+    @include fontSize(18px);
+    @include typo-semibold();
+    padding: $space-small 0 $space-medium;
+    text-transform: uppercase;
+
+    &::after {
+        @include fasIcon(plus);
+        font-size: 20px;
+        position: absolute;
+        right: 25px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(20px);
+
+        &::after {
+            font-size: 22px;
+        }
+    }
+}
+
+.can-accordion__text {
+    @include fontSize(14px);
+    @include typo-semibold();
+
+    @media (min-width: $mq-size-m) {
+        @include fontSize(16px);
+        display: none;
+    }
+}
+
+.state-can-accordion__item--open {
+    height: 100%;
+    overflow: visible;
+
+    .can-accordion__title::after {
+        transform: rotate(45deg);
+    }
+
+    @media (min-width: $mq-size-m) {
+        height: 100%;
+        width: 75%;
+
+        .can-accordion__text {
+            display: flex;
+        }
+    }
+}
+
+.state-can-accordion__item--collapsed {
+    @media (min-width: $mq-size-m) {
+        width: 8.33%;
+
+        .can-accordion__title {
+            padding-left: $space-super-large;
+            transform: rotate(90deg);
+        }
+
+        .can-accordion__title::after {
+            // right: 52px;
+            // top: 13px;
+            display: none;
+        }
+
+        .can-accordion__title::before {
+            @include fasIcon(plus);
+            font-size: 20px;
+            position: absolute;
+            left: 25px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    @media (min-width: $mq-size-xl) {
+        .can-accordion__title::before {
+            left: 40px;
+        }
+    }
+}

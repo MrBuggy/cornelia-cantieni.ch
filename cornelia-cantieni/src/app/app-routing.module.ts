@@ -14,6 +14,8 @@ import { LinkTilesViewComponent } from "./views/components/link-tiles-view/link-
 import { HeadingViewComponent } from "./views/components/heading-view/heading-view.component";
 import { RichtextViewComponent } from "./views/components/richtext-view/richtext-view.component";
 import { ImageViewComponent } from "./views/components/image-view/image-view.component";
+import { TeaserViewComponent } from "./views/components/teaser-view/teaser-view.component";
+import { AccordionViewComponent } from "./views/components/accordion-view/accordion-view.component";
 
 // pages
 import { PageHomeComponent } from "./views/pages/page-home/page-home.component";
@@ -63,6 +65,14 @@ const routes: Routes = [
     {
         path: "library/image-view",
         component: ImageViewComponent
+    },
+    {
+        path: "library/teaser-view",
+        component: TeaserViewComponent
+    },
+    {
+        path: "library/accordion-view",
+        component: AccordionViewComponent
     },
     {
         path: "library/page-home",

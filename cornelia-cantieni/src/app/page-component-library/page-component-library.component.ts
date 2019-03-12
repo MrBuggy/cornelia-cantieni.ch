@@ -13,6 +13,7 @@ import { Route } from "./Route";
  */
 export class PageComponentLibraryComponent {
     componentsList: Array<Route> = [
+        new Route("Accordion", "accordion-view"),
         new Route("Button", "button-view"),
         new Route("Header", "header-view"),
         new Route("Heading", "heading-view"),
@@ -21,7 +22,8 @@ export class PageComponentLibraryComponent {
         new Route("Link", "link-view"),
         new Route("Link-Tiles", "link-tiles-view"),
         new Route("Quote", "quote-view"),
-        new Route("Richtext", "richtext-view")
+        new Route("Richtext", "richtext-view"),
+        new Route("Teaser", "teaser-view")
     ];
 
     pagesList: Array<Route> = [new Route("Page-Home", "page-home")];
