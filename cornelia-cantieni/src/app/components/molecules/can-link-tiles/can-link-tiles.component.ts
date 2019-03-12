@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { TileValue } from '../../../models/tileValue';
 
 @Component({
@@ -6,7 +6,7 @@ import { TileValue } from '../../../models/tileValue';
     templateUrl: "./can-link-tiles.component.html",
     styleUrls: ["./can-link-tiles.component.scss"]
 })
-export class CanLinkTilesComponent implements OnInit {
+export class CanLinkTilesComponent {
     tiles: Array<TileValue> = [
         new TileValue (
             "Portrait",
@@ -30,8 +30,4 @@ export class CanLinkTilesComponent implements OnInit {
             "Mehr erfahren"
         )
     ];
-
-    constructor() { }
-
-    ngOnInit() { }
 }

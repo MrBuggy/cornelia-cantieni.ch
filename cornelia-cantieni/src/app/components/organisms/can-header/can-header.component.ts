@@ -6,15 +6,13 @@ import { NavigationService } from "../../../services/navigation.service";
     templateUrl: "./can-header.component.html",
     styleUrls: ["./can-header.component.scss"]
 })
-export class CanHeaderComponent implements OnInit {
+export class CanHeaderComponent {
     navOpen: boolean = false;
     counter: number = 0;
 
     constructor(
         private navigationService: NavigationService,
     ) {}
-
-    ngOnInit() {}
 
     toggleOffCanvas() {
         this.navOpen = !this.navOpen;

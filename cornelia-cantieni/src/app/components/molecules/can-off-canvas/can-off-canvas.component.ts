@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { NavigationService } from "../../../services/navigation.service";
 import { NavLink } from '../../../models/navLink';
 
@@ -7,7 +7,7 @@ import { NavLink } from '../../../models/navLink';
     templateUrl: "./can-off-canvas.component.html",
     styleUrls: ["./can-off-canvas.component.scss"]
 })
-export class CanOffCanvasComponent implements OnInit {
+export class CanOffCanvasComponent {
     selectors = {
         layoutCanvas: ".l-off-canvas",
         layoutPage: ".l-page"
@@ -29,13 +29,13 @@ export class CanOffCanvasComponent implements OnInit {
 
     constructor(private navigationService: NavigationService) {}
 
-    ngOnInit() {
+    ngOnInit(): void {
         this.navigationService.evToggleCanvas.subscribe( () => {
             this.toggleCanvas();
         });
     }
 
-    toggleCanvas() {
+    toggleCanvas(): void {
         let offCanvas = document.querySelector(this.selectors.layoutCanvas);
         let layoutPage = document.querySelector(this.selectors.layoutPage);
 

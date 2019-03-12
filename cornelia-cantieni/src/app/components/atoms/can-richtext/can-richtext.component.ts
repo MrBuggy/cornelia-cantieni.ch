@@ -1,16 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'can-richtext',
     templateUrl: './can-richtext.component.html',
     styleUrls: ['./can-richtext.component.scss']
 })
-export class CanRichtextComponent implements OnInit {
+export class CanRichtextComponent {
     @Input() children: string;
-
-    constructor() { }
-
-    ngOnInit() {
-    }
-
 }

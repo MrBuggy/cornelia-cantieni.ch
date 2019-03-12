@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { NavLink } from '../../../models/navLink';
 
 @Component({
@@ -6,7 +6,7 @@ import { NavLink } from '../../../models/navLink';
     templateUrl: "./can-nav-list.component.html",
     styleUrls: ["./can-nav-list.component.scss"]
 })
-export class CanNavListComponent implements OnInit {
+export class CanNavListComponent {
     navList: Array<NavLink> = [
         new NavLink ('Home', 'home'),
         new NavLink ('Portrait', 'portrait'),
@@ -15,8 +15,4 @@ export class CanNavListComponent implements OnInit {
         new NavLink ('Projekte', 'projects'),
         new NavLink ('Kontakt', 'contact')
     ];
-
-    constructor() {}
-
-    ngOnInit() {}
 }
