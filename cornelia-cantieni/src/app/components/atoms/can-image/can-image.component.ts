@@ -5,15 +5,9 @@ import { Component, OnInit, Input } from '@angular/core';
     templateUrl: './can-image.component.html',
     styleUrls: ['./can-image.component.scss']
 })
-export class CanImageComponent implements OnInit {
+export class CanImageComponent {
     @Input() imgAlt: string;
     @Input() imgSrc: string;
     @Input() modifier: string;
-    offset = 100;
-
-    constructor() { }
-
-    ngOnInit() {
-    }
-
+    offset: number = 100;
 }

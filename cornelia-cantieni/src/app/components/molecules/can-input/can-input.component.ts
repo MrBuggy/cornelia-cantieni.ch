@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: "can-input",
     templateUrl: "./can-input.component.html",
     styleUrls: ["./can-input.component.scss"]
 })
-export class CanInputComponent implements OnInit {
+export class CanInputComponent {
     @Input() state: string;
     @Input() id: string;
     @Input() label: string = "Label";
@@ -13,8 +13,4 @@ export class CanInputComponent implements OnInit {
     @Input() inputValue: string;
 
     isFocused: boolean = false;
-
-    constructor() {}
-
-    ngOnInit() {}
 }

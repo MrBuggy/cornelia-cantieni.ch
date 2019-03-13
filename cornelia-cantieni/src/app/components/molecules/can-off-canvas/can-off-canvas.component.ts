@@ -1,12 +1,13 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { NavigationService } from "../../../services/navigation.service";
+import { NavLink } from '../../../models/navLink';
 
 @Component({
     selector: "can-off-canvas",
     templateUrl: "./can-off-canvas.component.html",
     styleUrls: ["./can-off-canvas.component.scss"]
 })
-export class CanOffCanvasComponent implements OnInit {
+export class CanOffCanvasComponent {
     selectors = {
         layoutCanvas: ".l-off-canvas",
         layoutPage: ".l-page"
@@ -17,24 +18,24 @@ export class CanOffCanvasComponent implements OnInit {
         layoutPageNoScroll: "state-l-page--no-scroll"
     };
 
-    navList = [
-        { name: "Home", anchor: "home" },
-        { name: "Portrait", anchor: "portrait" },
-        { name: "Angebote", anchor: "offers" },
-        { name: "Tarife", anchor: "rates" },
-        { name: "Projekte", anchor: "projects" },
-        { name: "Kontakt", anchor: "contact" }
-    ]
+    navList: Array<NavLink> = [
+        new NavLink ('Home', 'home'),
+        new NavLink ('Portrait', 'portrait'),
+        new NavLink ('Angebote', 'offers'),
+        new NavLink ('Tarife', 'rates'),
+        new NavLink ('Projekte', 'projects'),
+        new NavLink ('Kontakt', 'contact')
+    ];
 
     constructor(private navigationService: NavigationService) {}
 
-    ngOnInit() {
+    ngOnInit(): void {
         this.navigationService.evToggleCanvas.subscribe( () => {
             this.toggleCanvas();
         });
     }
 
-    toggleCanvas() {
+    toggleCanvas(): void {
         let offCanvas = document.querySelector(this.selectors.layoutCanvas);
         let layoutPage = document.querySelector(this.selectors.layoutPage);
 
