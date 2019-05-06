@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { TileValue } from '../../../models/tileValue';
+import { TileValue } from '@models/tileValue';
 
 @Component({
     selector: "can-link-tiles",

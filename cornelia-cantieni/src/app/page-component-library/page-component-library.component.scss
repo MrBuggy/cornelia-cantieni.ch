@@ -1,6 +1,6 @@
-@import "../../shared/utils/colors/css/colors.scss";
-@import "../../shared/utils/spacings/css/spacings.scss";
-@import "../../shared/utils/typo/css/typo.scss";
+@import "colors.scss";
+@import "spacings.scss";
+@import "typo.scss";
 
 .library {
     @include typo-regular();

@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { NavLink } from '../../../models/navLink';
+import { NavLink } from '@models/navLink';
 
 @Component({
     selector: "can-nav-list",
