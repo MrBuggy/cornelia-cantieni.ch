@@ -1,8 +1,8 @@
-@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
-@import "../../../../shared/utils/colors/css/colors.scss";
-@import "../../../../shared/utils/outline/css/outline.scss";
-@import "../../../../shared/utils/spacings/css/spacings.scss";
-@import "../../../../shared/utils/typo/css/typo.scss";
+@import "breakpoints.scss";
+@import "colors.scss";
+@import "outline.scss";
+@import "spacings.scss";
+@import "typo.scss";
 
 .can-input {
     display: flex;

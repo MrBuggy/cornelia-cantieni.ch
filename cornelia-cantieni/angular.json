@@ -29,6 +29,25 @@
                         "styles": [
                             "src/styles.scss"
                         ],
+                        "stylePreprocessorOptions": {
+                            "includePaths": [
+                                "src/shared/utils/animations/css",
+                                "src/shared/utils/box-shadows/css",
+                                "src/shared/utils/breakpoints/css",
+                                "src/shared/utils/clearfix/css",
+                                "src/shared/utils/colors/css",
+                                "src/shared/utils/gradients/css",
+                                "src/shared/utils/icons/css",
+                                "src/shared/utils/layout/css",
+                                "src/shared/utils/links/css",
+                                "src/shared/utils/lists/css",
+                                "src/shared/utils/outline/css",
+                                "src/shared/utils/spacings/css",
+                                "src/shared/utils/typo/css",
+                                "src/shared/utils/webfonts/css",
+                                "src/shared/utils/z-index/css"
+                            ]
+                        },
                         "scripts": []
                     },
                     "configurations": {
