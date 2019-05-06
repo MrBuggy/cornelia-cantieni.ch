@@ -1,5 +1,5 @@
-import { Component, OnInit } from "@angular/core";
-import { NavigationService } from "../../../services/navigation.service";
+import { Component } from "@angular/core";
+import { NavigationService } from "@service/navigation.service";
 
 @Component({
     selector: "can-header",

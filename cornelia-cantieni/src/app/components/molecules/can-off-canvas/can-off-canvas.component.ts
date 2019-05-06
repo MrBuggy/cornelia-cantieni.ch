@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
-import { NavigationService } from "../../../services/navigation.service";
-import { NavLink } from '../../../models/navLink';
+import { NavigationService } from "@service/navigation.service";
+import { NavLink } from '@models/navLink';
 
 @Component({
     selector: "can-off-canvas",
