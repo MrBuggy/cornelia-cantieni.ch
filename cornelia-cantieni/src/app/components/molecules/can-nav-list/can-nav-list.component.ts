@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 import { NavLink } from '../../../models/navLink';
 import * as smoothscroll from "smoothscroll-polyfill";
-import { element } from "@angular/core/src/render3";
 
 @Component({
     selector: "can-nav-list",
@@ -41,7 +40,7 @@ export class CanNavListComponent {
                 offsetTop += el.offsetTop;
                 el = el.parentElement;
             }
-            
+
             return offsetTop
         }
 }
