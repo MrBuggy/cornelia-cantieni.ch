@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { NavLink } from '../../../models/navLink';
 import * as smoothscroll from "smoothscroll-polyfill";
+import { NavigationService } from "src/app/services/navigation.service";
 
 @Component({
     selector: "can-nav-list",
@@ -9,7 +10,11 @@ import * as smoothscroll from "smoothscroll-polyfill";
 })
 export class CanNavListComponent {
 
-    constructor() {
+    get currentLink () {
+        return this.navigationService.activeLink;
+    }
+
+    constructor(private navigationService: NavigationService) {
         smoothscroll.polyfill();
     }
 
@@ -30,6 +35,8 @@ export class CanNavListComponent {
         if (elementToNavigate != null) {
             window.scrollTo({top: this.getPosition(element) / 5 - document.getElementById('header').clientHeight - element.clientHeight - 80, behavior: 'smooth'})
         }
+
+        this.navigationService.activeLink = anchor;
     }
     
     // Inspired by https://stackoverflow.com/a/52445262/8707990
