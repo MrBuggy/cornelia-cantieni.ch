@@ -25,6 +25,7 @@
     "ng-lazyload-image": "5.0.0",
     "object-fit-images": "3.2.4",
     "rxjs": "~6.3.3",
+    "smoothscroll-polyfill": "^0.4.4",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

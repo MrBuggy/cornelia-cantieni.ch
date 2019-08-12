@@ -1,5 +1,7 @@
 <div class="can-nav-list">
     <ul class="can-nav-list__list">
-        <li *ngFor="let item of navList" class="can-nav-list__list-item"><a class="can-nav-list__link" href="#{{item.anchor}}">{{item.name}}</a></li>
+        <li *ngFor="let item of navList" class="can-nav-list__list-item">
+            <a class="can-nav-list__link" (click)="navigate(item.anchor)" [class.state-can-nav-list__list-item--active]="currentLink == item.anchor">{{item.name}}</a>
+        </li>
     </ul>
 </div>
