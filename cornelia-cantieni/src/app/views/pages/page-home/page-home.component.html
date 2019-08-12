@@ -1,6 +1,6 @@
-<section class="l-page-outer l-page-outer--header" id="header">
+<section class="l-page-outer l-page-outer--header" id="header" [class.l-page-outer--header--small]="!isImageHeaderVisible">
     <div class="container">
-        <div class="l-page-inner">
+        <div class="l-page-inner" [class.l-page-inner--small]="!isImageHeaderVisible">
             <div class="row">
                 <div class="col">
                     <can-header></can-header>

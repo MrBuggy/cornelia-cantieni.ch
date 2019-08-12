@@ -3,12 +3,10 @@
 @import "../../gradients/css/gradients.scss";
 @import "../../spacings/css/spacings.scss";
 @import "../../z-index/css/z-index.scss";
-
 $body-padding-top: 80px;
 $height-header-mobile: 85px;
 $height-quote: 580px;
 $margin-top-quote: 243px;
-
 .l-off-canvas {
     @include z-index-negative();
     background-color: $white;
@@ -19,7 +17,6 @@ $margin-top-quote: 243px;
     top: $height-header-mobile;
     transition: opacity 0.3s ease-in-out;
     width: 100%;
-
     @media (min-width: $mq-size-m) {
         display: none;
     }
@@ -32,7 +29,6 @@ $margin-top-quote: 243px;
 
 .l-page {
     padding-top: $body-padding-top;
-
     @media (min-width: $mq-size-m) {
         padding-top: 0;
     }
@@ -44,7 +40,6 @@ $margin-top-quote: 243px;
 
 .l-page-outer {
     margin: $space-small-desktop 0;
-
     @media (min-width: $mq-size-m) {
         margin: $space-xx-large 0;
     }
@@ -52,7 +47,6 @@ $margin-top-quote: 243px;
 
 .l-page-outer--gradient {
     @include gradient-base();
-
     @media (min-width: $mq-size-m) {
         background: $white;
     }
@@ -66,7 +60,6 @@ $margin-top-quote: 243px;
     position: fixed;
     top: 0;
     width: 100%;
-
     &::after {
         @include gradient-base();
         bottom: 0;
@@ -76,10 +69,8 @@ $margin-top-quote: 243px;
         position: absolute;
         width: 100vw;
     }
-
     @media (min-width: $mq-size-m) {
         margin: 0;
-
         &::before {
             background-color: $can-grey;
             content: "";
@@ -89,6 +80,12 @@ $margin-top-quote: 243px;
             top: 175px;
             width: 100vw;
         }
+    }
+}
+
+.l-page-outer--header--small {
+    &::before {
+        position: relative;
     }
 }
 
@@ -105,8 +102,11 @@ $margin-top-quote: 243px;
 
 .l-page-inner {
     padding: $space-small-desktop 0;
-
     @media (min-width: $mq-size-m) {
         padding: $space-medium 0;
     }
+}
+
+.l-page-inner--small {
+    padding-top: 0;
 }
