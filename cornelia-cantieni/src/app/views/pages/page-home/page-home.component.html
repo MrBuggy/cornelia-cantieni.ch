@@ -1,4 +1,4 @@
-<section class="l-page-outer l-page-outer--header" id="header" [class.l-page-outer--header--small]="!isImageHeaderVisible">
+<section class="l-page-outer l-page-outer--header" id="header" [class.l-page-outer--header--small]="!isImageHeaderVisible" [@toggleAnimation]="{value: isImageHeaderVisible ? 'open' : 'closed', params:{height: height} }">
     <div class="container">
         <div class="l-page-inner" [class.l-page-inner--small]="!isImageHeaderVisible">
             <div class="row">

@@ -6,6 +6,7 @@ import { Injectable, HostListener } from '@angular/core';
 export class HeaderService {
 
   private _isImageHeaderVisible: boolean = true;
+  imageHeaderHeight: number = 0;
 
   get isImageHeaderVisible() {
     return this._isImageHeaderVisible;

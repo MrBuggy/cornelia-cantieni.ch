@@ -1,5 +1,5 @@
-<header class="can-header" [class.can-header--small]="!isImageHeaderVisible" @toggleHeight>
-    <div class="can-header__top" *ngIf="isImageHeaderVisible" @toggleAnimation>
+<header class="can-header" [class.can-header--small]="!isImageHeaderVisible">
+    <div class="can-header__top" id="imageHeader" [class.can-header__top--small]="!isImageHeaderVisible">
         <img src="../assets/img/cantieni-logo.png" alt="Cornelia Cantieni Logo" class="can-header__logo">
         <can-hamburger (click)="toggleOffCanvas()" [navOpen]="navOpen"></can-hamburger>
     </div>
