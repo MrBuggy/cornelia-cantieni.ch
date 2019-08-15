@@ -2,6 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule } from '@angular/forms';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -34,10 +35,39 @@ import { AccordionViewComponent } from './views/components/accordion-view/accord
 import { CanAccordionComponent } from './components/molecules/can-accordion/can-accordion.component';
 
 @NgModule({
-    declarations: [AppComponent, PageComponentLibraryComponent, ButtonViewComponent, CanButtonComponent, PageHomeComponent, CanInputComponent, InputViewComponent, CanLinkComponent, LinkViewComponent, CanHeaderComponent, HeaderViewComponent, CanHamburgerComponent, CanNavListComponent, CanOffCanvasComponent, CanQuoteComponent, QuoteViewComponent, CanLinkTilesComponent, LinkTilesViewComponent, CanHeadingComponent, HeadingViewComponent, CanRichtextComponent, RichtextViewComponent, CanImageComponent, ImageViewComponent, CanTeaserComponent, TeaserViewComponent, AccordionViewComponent, CanAccordionComponent],
-    imports: [BrowserModule, AppRoutingModule, FormsModule, LazyLoadImageModule],
+    declarations: [
+        AppComponent,
+        PageComponentLibraryComponent, 
+        ButtonViewComponent, 
+        CanButtonComponent, 
+        PageHomeComponent, 
+        CanInputComponent, 
+        InputViewComponent, 
+        CanLinkComponent, 
+        LinkViewComponent, 
+        CanHeaderComponent, 
+        HeaderViewComponent, 
+        CanHamburgerComponent, 
+        CanNavListComponent, 
+        CanOffCanvasComponent, 
+        CanQuoteComponent, 
+        QuoteViewComponent, 
+        CanLinkTilesComponent, 
+        LinkTilesViewComponent, 
+        CanHeadingComponent, 
+        HeadingViewComponent, 
+        CanRichtextComponent, 
+        RichtextViewComponent, 
+        CanImageComponent, 
+        ImageViewComponent, 
+        CanTeaserComponent, 
+        TeaserViewComponent, 
+        AccordionViewComponent, 
+        CanAccordionComponent
+    ],
+    imports: [BrowserModule, AppRoutingModule, FormsModule, LazyLoadImageModule, BrowserAnimationsModule],
     providers: [],
     bootstrap: [AppComponent]
 })
 
-export class AppModule {}
+export class AppModule { }
