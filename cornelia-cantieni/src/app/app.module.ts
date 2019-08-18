@@ -33,6 +33,7 @@ import { CanTeaserComponent } from './components/molecules/can-teaser/can-teaser
 import { TeaserViewComponent } from './views/components/teaser-view/teaser-view.component';
 import { AccordionViewComponent } from './views/components/accordion-view/accordion-view.component';
 import { CanAccordionComponent } from './components/molecules/can-accordion/can-accordion.component';
+import { CanBackToTopComponent } from './components/atoms/can-back-to-top/can-back-to-top.component';
 
 @NgModule({
     declarations: [
@@ -63,7 +64,7 @@ import { CanAccordionComponent } from './components/molecules/can-accordion/can-
         CanTeaserComponent, 
         TeaserViewComponent, 
         AccordionViewComponent, 
-        CanAccordionComponent
+        CanAccordionComponent, CanBackToTopComponent
     ],
     imports: [BrowserModule, AppRoutingModule, FormsModule, LazyLoadImageModule, BrowserAnimationsModule],
     providers: [],

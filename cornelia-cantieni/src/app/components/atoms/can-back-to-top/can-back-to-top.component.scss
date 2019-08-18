@@ -1,0 +1,24 @@
+@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
+@import '../../../../shared/utils/colors/css/colors.scss';
+.can-back-to-top-button {
+    background-color: $can-blue;
+    border: none;
+    border-radius: 100px;
+    bottom: 100px;
+    position: fixed;
+    right: 18px;
+    width: 100px;
+    height: 100px;
+    @media screen and (max-width: $mq-size-m) {
+        height: 70px;
+        width: 70px;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.can-back-to-top-image {
+    height: max-content;
+    width: auto;
+}
