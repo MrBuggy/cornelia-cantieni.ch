@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { HeaderService } from 'src/app/services/header.service';
+import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'can-back-to-top',
@@ -7,6 +8,7 @@ import { HeaderService } from 'src/app/services/header.service';
     styleUrls: ['./can-back-to-top.component.scss']
 })
 export class CanBackToTopComponent {
+    faArrowCircleUp = faArrowCircleUp;
 
     @HostListener('window:scroll', ['$event']) onscroll() {
         if (window.pageYOffset > 800) {
