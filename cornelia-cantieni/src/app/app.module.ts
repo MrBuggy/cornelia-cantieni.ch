@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from '@angular/forms';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -33,39 +34,40 @@ import { CanTeaserComponent } from './components/molecules/can-teaser/can-teaser
 import { TeaserViewComponent } from './views/components/teaser-view/teaser-view.component';
 import { AccordionViewComponent } from './views/components/accordion-view/accordion-view.component';
 import { CanAccordionComponent } from './components/molecules/can-accordion/can-accordion.component';
+import { CanBackToTopComponent } from './components/atoms/can-back-to-top/can-back-to-top.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        PageComponentLibraryComponent, 
-        ButtonViewComponent, 
-        CanButtonComponent, 
-        PageHomeComponent, 
-        CanInputComponent, 
-        InputViewComponent, 
-        CanLinkComponent, 
-        LinkViewComponent, 
-        CanHeaderComponent, 
-        HeaderViewComponent, 
-        CanHamburgerComponent, 
-        CanNavListComponent, 
-        CanOffCanvasComponent, 
-        CanQuoteComponent, 
-        QuoteViewComponent, 
-        CanLinkTilesComponent, 
-        LinkTilesViewComponent, 
-        CanHeadingComponent, 
-        HeadingViewComponent, 
-        CanRichtextComponent, 
-        RichtextViewComponent, 
-        CanImageComponent, 
-        ImageViewComponent, 
-        CanTeaserComponent, 
-        TeaserViewComponent, 
-        AccordionViewComponent, 
-        CanAccordionComponent
+        PageComponentLibraryComponent,
+        ButtonViewComponent,
+        CanButtonComponent,
+        PageHomeComponent,
+        CanInputComponent,
+        InputViewComponent,
+        CanLinkComponent,
+        LinkViewComponent,
+        CanHeaderComponent,
+        HeaderViewComponent,
+        CanHamburgerComponent,
+        CanNavListComponent,
+        CanOffCanvasComponent,
+        CanQuoteComponent,
+        QuoteViewComponent,
+        CanLinkTilesComponent,
+        LinkTilesViewComponent,
+        CanHeadingComponent,
+        HeadingViewComponent,
+        CanRichtextComponent,
+        RichtextViewComponent,
+        CanImageComponent,
+        ImageViewComponent,
+        CanTeaserComponent,
+        TeaserViewComponent,
+        AccordionViewComponent,
+        CanAccordionComponent, CanBackToTopComponent
     ],
-    imports: [BrowserModule, AppRoutingModule, FormsModule, LazyLoadImageModule, BrowserAnimationsModule],
+    imports: [BrowserModule, AppRoutingModule, FormsModule, LazyLoadImageModule, BrowserAnimationsModule, FontAwesomeModule],
     providers: [],
     bootstrap: [AppComponent]
 })

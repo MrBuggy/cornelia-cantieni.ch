@@ -7,10 +7,7 @@
                     <h2 class="library__content-header">Components</h2>
                     <ul class="library-content__list">
                         <li *ngFor="let component of componentsList">
-                            <a
-                                class="library__content-item-link"
-                                [routerLink]="component.link"
-                                >{{ component.name }}</a
+                            <a class="library__content-item-link" [routerLink]="component.link">{{ component.name }}</a
                             >
                         </li>
                     </ul>
