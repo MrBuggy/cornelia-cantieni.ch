@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from '@angular/forms';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -67,7 +67,7 @@ import { CanBackToTopComponent } from './components/atoms/can-back-to-top/can-ba
         AccordionViewComponent,
         CanAccordionComponent, CanBackToTopComponent
     ],
-    imports: [BrowserModule, AppRoutingModule, FormsModule, LazyLoadImageModule, BrowserAnimationsModule, FontAwesomeModule],
+    imports: [BrowserModule, AppRoutingModule, FormsModule, LazyLoadImageModule, BrowserAnimationsModule],
     providers: [],
     bootstrap: [AppComponent]
 })
