@@ -1,13 +1,13 @@
-@import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
-@import '../../../../shared/utils/colors/css/colors.scss';
-fa-icon {
-    background-color: white;
-    border-radius: 100%;
-    box-shadow: inset 0px 0px 5px $can-blue;
+@import "../../../../shared/utils/icons/css/icons.scss";
+@import "../../../../shared/utils/colors/css/colors.scss";
+.can-back-to-top {
     bottom: 100px;
     position: fixed;
     right: 18px;
     color: $can-blue;
+    &:before {
+        @include fasIcon('arrow-circle-up', 50px, 75px);
+    }
     &:hover {
         cursor: pointer;
     }
