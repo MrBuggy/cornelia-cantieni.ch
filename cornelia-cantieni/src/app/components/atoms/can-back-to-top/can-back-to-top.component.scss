@@ -1,13 +1,17 @@
 @import "../../../../shared/utils/breakpoints/css/breakpoints.scss";
 @import '../../../../shared/utils/colors/css/colors.scss';
+@import '../../../../shared/utils/spacings/css/spacings.scss';
+
 fa-icon {
     background-color: white;
     border-radius: 100%;
     box-shadow: inset 0px 0px 5px $can-blue;
     bottom: 100px;
     position: fixed;
-    right: 18px;
+    right: $space-xxx-large;
     color: $can-blue;
+    opacity: 0.7;
+
     &:hover {
         cursor: pointer;
     }
