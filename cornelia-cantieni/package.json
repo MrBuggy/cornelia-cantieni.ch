@@ -26,7 +26,7 @@
     "@types/lodash": "^4.14.136",
     "bootstrap-4-grid": "2.4.1",
     "core-js": "^2.5.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "ng-lazyload-image": "5.0.0",
     "object-fit-images": "3.2.4",
     "rxjs": "~6.3.3",
